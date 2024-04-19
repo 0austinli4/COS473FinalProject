@@ -1,0 +1,80 @@
+Saving last configuration file to .certora_internal/24_04_19_10_38_41_365/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec, found the imports: []
+copying spec file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec to /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/.0_ERC20.spec.spec
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_verify.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365']
+
+building file ERC20.sol
+Running cmd solc -o ".certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json
+stdout, stderr = .certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0.standard.json.stdout, .certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json time: 0.3212
+reading standard json data from .certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0.standard.json.stdout
+Running cmd solc --version
+stdout, stderr = .certora_internal/24_04_19_10_38_41_365/.certora_config/version_check_solc.stdout, .certora_internal/24_04_19_10_38_41_365/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run solc --version time: 0.0995
+collecting worklist for /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol'])
+Adding a base contract link ref /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol to worklist
+Adding a base contract link ref /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol to worklist
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol'])
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol'])
+Contracts in ERC20.sol_0 (file ERC20.sol): ['ERC20']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol:ERC20'), (274184521717934524641157099916833587201, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol:IERC20'), (274184521717934524641157099916833587202, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol:IERC20Metadata')]
+Working on contract ERC20
+Working on contract ERC20
+Working on contract IERC20
+Working on contract IERC20
+Working on contract IERC20Metadata
+Working on contract IERC20Metadata
+For contracts of primary ERC20
+finding primary contract address of /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol:ERC20 in [(274184521717934524641157099916833587200, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol:ERC20'), (274184521717934524641157099916833587201, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol:IERC20'), (274184521717934524641157099916833587202, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol:IERC20Metadata')]
+Contracts in SDC ERC20.sol_0: ['ERC20', 'IERC20', 'IERC20Metadata']
+Building source tree
+Copying /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec to .certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.spec
+Copying /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol to .certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol
+Copying /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20Metadata.sol to .certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol
+Copying /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IERC20.sol to .certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol
+Backing up current .certora_sources to .certora_internal/24_04_19_10_38_41_365/.certora_sources/.pre_autofinders.0
+Running cmd solc -o ".certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources",. --standard-json
+stdout, stderr = .certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0.standard.json.stdout, .certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources",. --standard-json time: 0.2213
+reading standard json data from .certora_internal/24_04_19_10_38_41_365/.certora_config/ERC20.sol_0.standard.json.stdout
+collecting worklist for /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol'])
+Adding a base contract link ref /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol to worklist
+Adding a base contract link ref /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol to worklist
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol'])
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol'])
+Contracts in ERC20.sol_0 (file .certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol): ['ERC20']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587203, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol:ERC20'), (274184521717934524641157099916833587204, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol:IERC20'), (274184521717934524641157099916833587205, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol:IERC20Metadata')]
+Working on contract ERC20
+Working on contract ERC20
+Working on contract IERC20
+Working on contract IERC20
+Working on contract IERC20Metadata
+Working on contract IERC20Metadata
+For contracts of primary ERC20
+finding primary contract address of /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol:ERC20 in [(274184521717934524641157099916833587203, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/ERC20.sol:ERC20'), (274184521717934524641157099916833587204, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20.sol:IERC20'), (274184521717934524641157099916833587205, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_sources/IERC20Metadata.sol:IERC20Metadata')]
+Contracts in SDC ERC20.sol_0: ['ERC20', 'IERC20', 'IERC20Metadata']
+Backing up instrumented .certora_sources to .certora_internal/24_04_19_10_38_41_365/.certora_sources/.post_autofinders.0
+Rolling back .certora_sources to .certora_internal/24_04_19_10_38_41_365/.certora_sources/.pre_autofinders.0 version
+Libraries to add = []
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_verify.json
+writing file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365/.certora_build.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_38_41_365', '-typeCheck']

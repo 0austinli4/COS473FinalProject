@@ -1,0 +1,123 @@
+(COS473) \[\]${currentWorkingDir}> \[\]certoraRun ERC20.sol --verify ERC20:ERC20.spec --wait_for_results
+WARNING: You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+Compiling ERC20.sol...
+Compiling ERC20.sol to expose internal function information...
+
+Connecting to server...
+
+Job submitted to server
+
+Follow your job at https://prover.certora.com
+Once the job is completed, the results will be available at https://prover.certora.com/output/618104/d89e7a548d4245a48ec0d728f5e558a5?anonymousKey=68131fcca0b2d4d308767f09f048e87f899e7b56
+Output:
+[INFO]: Download - 7.0.7/emv-7.0.7.jar
+[INFO]: Download finished
+[INFO]: Download - 7.0.7/tac_optimizer-7.0.7
+[INFO]: Download finished
+[INFO]: Download - uploadFiles/618104/d89e7a548d4245a48ec0d728f5e558a5.zip
+[INFO]: Download finished
+[INFO]: Primary contract name: ERC20
+[INFO]: found 39 cache files
+[INFO]: Command: java -Xmx31500m -XX:+UseParallelGC -XX:MaxHeapFreeRatio=10 -XX:MinHeapFreeRatio=5 -XX:G1PeriodicGCInterval=15 -XX:NewRatio=5 -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/home/appuser/code/java_error%p.log -DoutputUrl=outputs/618104/output_d89e7a548d4245a48ec0d728f5e558a5/ -DjobId=d89e7a548d4245a48ec0d728f5e558a5 -DuserId=618104 -jar /home/appuser/prover/emv.jar -cache f6b9849e6ccf0e927f0586f00d12946af0bef5a0707bb539bb7f1e0935ea11c1-optimisticFalse-iterNone-None--certora-cli-7.0.7 -globalTimeout 7200 -globalTimeout 7200
+[INFO]: Overcommit Memory Value: 1 
+Start Fri Apr 19 15:42:48 GMT 2024
+Start Fri Apr 19 15:42:48 GMT 2024
+The scene contains 20 contracts:
+ERC20 : 0xce4604a0000000000000000000000003,
+ecrecover : 0x1,
+sha256 : 0x2,
+ripemd160 : 0x3,
+identity : 0x4,
+bigmod : 0x5,
+bn256Add : 0x6,
+bn256ScalarMul : 0x7,
+bn256Pairing : 0x8,
+Precompiled244 : 0xf4,
+Precompiled245 : 0xf5,
+Precompiled246 : 0xf6,
+Precompiled247 : 0xf7,
+Precompiled248 : 0xf8,
+Precompiled249 : 0xf9,
+Precompiled250 : 0xfa,
+Precompiled251 : 0xfb,
+Precompiled252 : 0xfc,
+Precompiled253 : 0xfd,
+Precompiled254 : 0xfe
+Running initial transformations
+Has CVL checks.
+Checking CVL ERC20.spec for contract ERC20
+Unrolling loops 1 time, unwinding condition is asserted
+Checking rule transferSpec (1 out of 4)...
+Checking rule transferReverts (2 out of 4)...
+Checking rule transferDoesntRevert (3 out of 4)...
+Checking rule envfreeFuncsStaticCheck (4 out of 4)...
+Starting to run on rule transferSpec 
+Starting to run on rule envfreeFuncsStaticCheck 
+Starting to run on rule transferReverts 
+Starting to run on rule transferDoesntRevert 
+Starting to run on rule allowance(address,address) of envfreeFuncsStaticCheck
+Starting to run on rule totalSupply() of envfreeFuncsStaticCheck
+Starting to run on rule balanceOf(address) of envfreeFuncsStaticCheck
+Result for envfreeFuncsStaticCheck: envfreeFuncsStaticCheck: balanceOf(address): SUCCESS
+totalSupply(): SUCCESS
+allowance(address,address): SUCCESS
+Starting to run on rule transferReverts 
+Starting to run on rule transferSpec 
+Starting to run on rule transferDoesntRevert 
+Verified: transferDoesntRevert
+transferDoesntRevert: Properties successfully verified on all inputs
+Verified: transferReverts
+transferReverts: Properties successfully verified on all inputs
+Result for transferDoesntRevert: transferDoesntRevert: SUCCESS
+Result for transferReverts: transferReverts: SUCCESS
+Violated: transferSpec
+transferSpec: A property is violated
+Result for transferSpec: transferSpec: FAIL: transfer must decrease sender's balance ... - ERC20.spec line 41
+Results for envfreeFuncsStaticCheck:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|balanceOf(address)                      |Not violated |0         |                                                            |no local variables                                |
+|totalSupply()                           |Not violated |0         |                                                            |no local variables                                |
+|allowance(address,address)              |Not violated |0         |                                                            |no local variables                                |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for all:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|envfreeFuncsStaticCheck                 |Not violated |0         |                                                            |no local variables                                |
+|transferDoesntRevert                    |Not violated |0         |                                                            |no local variables                                |
+|transferReverts                         |Not violated |0         |                                                            |no local variables                                |
+|transferSpec                            |Violated     |0         |Assert message: transfer must decrease sender's balance ... |ERC20=ERC20 (0x2712)                              |
+|                                        |             |          |- ERC20.spec line 41                                        |amount=2                                          |
+|                                        |             |          |                                                            |balance_recip_after=3                             |
+|                                        |             |          |                                                            |balance_recip_before=3                            |
+|                                        |             |          |                                                            |balance_sender_after=3                            |
+|                                        |             |          |                                                            |balance_sender_before=3                           |
+|                                        |             |          |                                                            |e.block.basefee=9                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=8                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x401                            |
+|                                        |             |          |                                                            |e.block.difficulty=7                              |
+|                                        |             |          |                                                            |e.block.gaslimit=6                                |
+|                                        |             |          |                                                            |e.block.number=5                                  |
+|                                        |             |          |                                                            |e.block.timestamp=4                               |
+|                                        |             |          |                                                            |e.msg.sender=ERC20 (0x2712)                       |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x402                                 |
+|                                        |             |          |                                                            |recip=ERC20 (0x2712)                              |
+|                                        |             |          |                                                            |sender=ERC20 (0x2712)                             |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Failures summary:
+Failed on transferSpec:
+Assert message: transfer must decrease sender's balance ... - ERC20.spec line 41
+Done 0m
+Done 0m
+Event reporter: all events were sent without errors
+[INFO]: Process returned with 100
+
+Job is completed! View the results at https://prover.certora.com/output/618104/d89e7a548d4245a48ec0d728f5e558a5?anonymousKey=68131fcca0b2d4d308767f09f048e87f899e7b56
+Finished verification request
+ERROR: Prover found violations:
+[rule] transferSpec: FAIL

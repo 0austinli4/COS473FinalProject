@@ -1,0 +1,24 @@
+{
+    "CLI_version": "7.0.7",
+    "branch": "main",
+    "conf": {
+        "files": [
+            "ERC20.sol"
+        ],
+        "process": "emv",
+        "verify": "ERC20:ERC20.spec",
+        "wait_for_results": "all"
+    },
+    "cwd_relative": ".",
+    "dirty": true,
+    "origin": "https://github.com/0austinli4/COS473FinalProject.git",
+    "raw_args": [
+        "/Users/austinli/.pyenv/versions/3.8.17/bin/certoraRun",
+        "ERC20.sol",
+        "--verify",
+        "ERC20:ERC20.spec",
+        "--wait_for_results"
+    ],
+    "revision": "7087ea532b70c0126d0b06daa3cd40ea67a065bf",
+    "timestamp": "1713558418.201294"
+}

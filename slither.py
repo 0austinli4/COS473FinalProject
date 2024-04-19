@@ -20,12 +20,12 @@ def run_slither(file_path):
 
     # Handle the output as needed, for example, log to a file or parse for specific information
     if result.returncode != 0:
-        with open('slither_errors.log', 'w') as log_file:
+        with open('slither_log.txt', 'w') as log_file:
             log_file.write(result.stderr)
-        # print(f"\n\nError during Slither execution. Details are logged in slither_errors.log")
         return result.stderr
     else:
-        print(result.stdout)  # Or handle as needed
+        with open('slither_log.txt', 'w') as log_file:
+            log_file.write(result)
         return result.stdout
 
 def parse_outputSlither(input):
@@ -42,13 +42,13 @@ def parse_outputSlither(input):
     return errors
 
 def outputToUser(gptString, slither_output, filename="output_log.txt"):
-    with open(filename, "w") as file:
+    with open(filename, "a") as file:
         file.write("======================================================================\n")
         file.write("Here is the traceback of your calls\n")
-        file.write("\n\n\n\n 1. Slither(to see full logs, look for slither_errors.log) : \n")
-        file.write(slither_output + "\n")
-        file.write("\n\n\n\n 1. ChatGPT Revisions(to see newly written file, look at gpt1.sol): \n")
-        file.write(gptString + "\n")
+        file.write("\n\n\n\n Slither(to see full logs, look for slither_log.txt) : \n")
+        file.write("\n" + slither_output + "\n")
+        file.write("\n\n\n\n ChatGPT Revisions(to see newly written file, look at gpt1.sol): \n")
+        file.write("\n" + gptString + "\n")
         file.write("\n")
         file.write("======================================================================\n")
 

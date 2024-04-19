@@ -1,0 +1,11 @@
+Saving last configuration file to .certora_internal/24_04_19_10_34_51_603/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_34_51_603/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec, found the imports: []
+copying spec file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec to /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_34_51_603/.certora_sources/.0_ERC20.spec.spec
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_34_51_603/.certora_verify.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_19_10_34_51_603']

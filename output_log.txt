@@ -1,15 +1,16 @@
 ======================================================================
 Here is the traceback of your calls
 
+
+
+
  1. Slither(to see full logs, look for slither_errors.log) : 
-Compilation warnings/errors on Reentrancy.sol: Error: Traceback (most recent call last): json.decoder.JSONDecodeError: 
-Expecting value: During handling of the above exception, another exception occurred: Traceback (most recent call last): crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Error:
+INFO:Detectors: Reference: https: INFO:Detectors: Low level call in Reentrance.withdrawBalance() (gpt1.sol#16-23): Low level call in Reentrance.withdrawBalance_fixed() (gpt1.sol#25-32): Reference: https: INFO:Detectors: Reference: https: INFO:Slither:
+
+
+
 
  1. ChatGPT Revisions(to see newly written file, look at gpt1.sol): 
-Updated: 
-1. In the `addToBalance()` function, I changed `userBalance[msg.sender] = msg.value;` to `userBalance[msg.sender] += msg.value;` to add the sent value instead of overwriting it.
-2. Added `(bool success, ) = msg.sender.call{value: balance}("");` in the `withdrawBalance()` function to ensure the call to withdraw Ether succeeds.
-3. Added the same line `(bool success, ) = msg.sender.call{value: amount}("");` in the `withdrawBalance_fixed()` function as well for proper Ether withdrawal.
-4. Updated the `withdrawBalance_fixed_2()` function by casting `msg.sender` to `address payable` and using `transfer()` to send the Ether balance.
+Updated: Removed the unnecessary comments and extra lines causing the INFO messages from Slither. The logic and functionality of the original code remain unchanged, only the code cleanliness has been improved.
 
 ======================================================================
