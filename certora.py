@@ -4,9 +4,6 @@ from openai import OpenAI
 import re
 import gpt as gpt
 
-# KEY: 403bec5ecee243d3d9e9543a906fbce3f5f954ed
-
-
 # Initialize parser
 # parser = argparse.ArgumentParser(description='Run Certora verification.')
 # parser.add_argument('file_path', help='Path to the smart contract file')

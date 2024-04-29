@@ -5,7 +5,7 @@ import re
 
 def openAIAnalysisSlither(file_path, spec_path, request, index):
     # Initialize the OpenAI client with your API key
-    api_key = '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'  # Replace 'your_api_key' with your actual OpenAI API key
+    api_key = 'your_api_key'  # Replace 'your_api_key' with your actual OpenAI API key
     client = OpenAI(api_key=api_key)
 
     # Read the file content

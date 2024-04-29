@@ -1,9 +1,0 @@
-INFO:Detectors:
-SafeMath.safeSub(uint256,uint256) (Borda.sol#10-14) is never used and should be removed
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
-INFO:Detectors:
-Pragma version^0.8.0 (Borda.sol#2) allows old versions
-Pragma version^0.8.0 (IBorda.sol#1) allows old versions
-solc-0.8.25 is not recommended for deployment
-Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
-INFO:Slither:Borda.sol analyzed (3 contracts with 94 detectors), 4 result(s) found
