@@ -1,0 +1,44 @@
+======================================================================
+Here is the traceback of your calls
+
+
+
+
+ Slither(to see full logs, look for slither_log.txt) : 
+
+Compilation warnings/errors on gpt_slither2.sol: Warning: SPDX license 
+identifier not provided in source file. Before publishing, consider 
+adding a comment containing "SPDX-License-Identifier: <SPDX-License>" 
+to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. 
+
+
+
+
+ ChatGPT Revisions(to see newly written file, look at gpt1.sol): 
+
+Updated: Added SPDX license identifier `// SPDX-License-Identifier: 
+UNLICENSED` at the beginning of the contract to address the warning provided by Slither.
+
+======================================================================
+
+======================================================================
+
+ 1. Certora (to see full logs, look for certora_errors.log) : 
+Failures summary:
+Failed on correctPointsIncreaseToContenders:
+Assert message: second choice received other amount than... - Borda.spec line 42
+Done 0m
+Done 0m
+Event reporter: all events were sent without errors
+[INFO]: 
+
+
+
+
+ 1. ChatGPT Revisions(to see newly written file, look at gpt_certora.sol): 
+Updated:** 
+- Inside the `vote` function, I changed the points awarded to the second choice 
+from 3 to 2 and to the third choice from 3 to 1. This adjustment aligns with the 
+test expectations specified in the Certora specification test.
+
+======================================================================

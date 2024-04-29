@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "Borda",
+    "specfile": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec",
+    "specfileOrigRelpath": "Borda.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

@@ -1,0 +1,37 @@
+Saving last configuration file to .certora_internal/24_04_21_16_46_43_113/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_46_43_113/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec, found the imports: []
+copying spec file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec to /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_46_43_113/.certora_sources/.0_Borda.spec.spec
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_46_43_113/.certora_verify.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_46_43_113']
+
+building file BordaBug1.sol
+Running cmd solc -o ".certora_internal/24_04_21_16_46_43_113/.certora_config/BordaBug1.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json
+stdout, stderr = .certora_internal/24_04_21_16_46_43_113/.certora_config/BordaBug1.sol_0.standard.json.stdout, .certora_internal/24_04_21_16_46_43_113/.certora_config/BordaBug1.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_21_16_46_43_113/.certora_config/BordaBug1.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json time: 0.23
+reading standard json data from .certora_internal/24_04_21_16_46_43_113/.certora_config/BordaBug1.sol_0.standard.json.stdout
+build failed
+Failure traceback: 
+CertoraUserInputError: solc had an error:
+ParserError: Source file requires different compiler version (current compiler is 0.8.25+commit.b61c2a91.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version
+ --> /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:1:1:
+  |
+1 | pragma solidity ^0.7.0;
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Encountered an error running Certora Prover:
+solc had an error:
+ParserError: Source file requires different compiler version (current compiler is 0.8.25+commit.b61c2a91.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version
+ --> /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:1:1:
+  |
+1 | pragma solidity ^0.7.0;
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+

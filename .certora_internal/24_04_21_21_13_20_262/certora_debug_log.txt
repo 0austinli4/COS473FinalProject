@@ -1,0 +1,37 @@
+Saving last configuration file to .certora_internal/24_04_21_21_13_20_262/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_21_13_20_262/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec, found the imports: []
+copying spec file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec to /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_21_13_20_262/.certora_sources/.0_ERC20.spec.spec
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_21_13_20_262/.certora_verify.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_21_13_20_262']
+
+building file ERC20.sol
+Running cmd solc -o ".certora_internal/24_04_21_21_13_20_262/.certora_config/ERC20.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json
+stdout, stderr = .certora_internal/24_04_21_21_13_20_262/.certora_config/ERC20.sol_0.standard.json.stdout, .certora_internal/24_04_21_21_13_20_262/.certora_config/ERC20.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_21_21_13_20_262/.certora_config/ERC20.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json time: 0.1763
+reading standard json data from .certora_internal/24_04_21_21_13_20_262/.certora_config/ERC20.sol_0.standard.json.stdout
+build failed
+Failure traceback: 
+CertoraUserInputError: solc had an error:
+DeclarationError: Undeclared identifier.
+  --> /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol:37:9:
+   |
+37 |         _beforeTokenTransfer(address(0), account, amount);
+   |         ^^^^^^^^^^^^^^^^^^^^
+
+
+Encountered an error running Certora Prover:
+solc had an error:
+DeclarationError: Undeclared identifier.
+  --> /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.sol:37:9:
+   |
+37 |         _beforeTokenTransfer(address(0), account, amount);
+   |         ^^^^^^^^^^^^^^^^^^^^
+
+

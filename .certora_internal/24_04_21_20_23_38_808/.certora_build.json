@@ -1,0 +1,1425 @@
+{
+    "Borda_00000000ce4604a0000000000000000000000003": {
+        "contracts": [
+            {
+                "address": "00000000ce4604a0000000000000000000000003",
+                "allMethods": [
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "constructor",
+                        "notpayable": true,
+                        "paramNames": [],
+                        "returns": [],
+                        "sighash": "0",
+                        "stateMutability": "nonpayable",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "getFullContenderDetails",
+                        "notpayable": true,
+                        "paramNames": [
+                            "contender"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "d956599e",
+                        "stateMutability": "view",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "getFullVoterDetails",
+                        "notpayable": true,
+                        "paramNames": [
+                            "voter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "25508d8a",
+                        "stateMutability": "view",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "getPointsOfContender",
+                        "notpayable": true,
+                        "paramNames": [
+                            "contender"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "e8fe5460",
+                        "stateMutability": "view",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "getWinner",
+                        "notpayable": true,
+                        "paramNames": [],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "8e7ea5b2",
+                        "stateMutability": "view",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "hasVoted",
+                        "notpayable": true,
+                        "paramNames": [
+                            "voter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "09eef43e",
+                        "stateMutability": "view",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "registerContender",
+                        "notpayable": true,
+                        "paramNames": [
+                            "age"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "099a3fb9",
+                        "stateMutability": "nonpayable",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "registerVoter",
+                        "notpayable": true,
+                        "paramNames": [
+                            "age"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "6d961300",
+                        "stateMutability": "nonpayable",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "vote",
+                        "notpayable": true,
+                        "paramNames": [
+                            "first",
+                            "second",
+                            "third"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "f7610be0",
+                        "stateMutability": "nonpayable",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "voteTo",
+                        "notpayable": true,
+                        "paramNames": [
+                            "contender",
+                            "points"
+                        ],
+                        "returns": [],
+                        "sighash": "0",
+                        "stateMutability": "nonpayable",
+                        "visibility": "private"
+                    }
+                ],
+                "bytecode": "608060405234801561000f575f80fd5b5060043610610086575f3560e01c80638e7ea5b2116100595780638e7ea5b21461014e578063d956599e1461016d578063e8fe54601461019f578063f7610be0146101cf57610086565b8063099a3fb91461008a57806309eef43e146100ba57806325508d8a146100ea5780636d9613001461011e575b5f80fd5b6100a4600480360381019061009f919061116b565b6101ff565b6040516100b191906111b0565b60405180910390f35b6100d460048036038101906100cf9190611223565b61033e565b6040516100e191906111b0565b60405180910390f35b61010460048036038101906100ff9190611223565b61042a565b604051610115959493929190611275565b60405180910390f35b6101386004803603810190610133919061116b565b610518565b60405161014591906111b0565b60405180910390f35b6101566106a3565b6040516101649291906112d5565b60405180910390f35b61018760048036038101906101829190611223565b610740565b604051610196939291906112fc565b60405180910390f35b6101b960048036038101906101b49190611223565b6107e9565b6040516101c69190611331565b60405180910390f35b6101e960048036038101906101e4919061134a565b6108ca565b6040516101f691906111b0565b60405180910390f35b5f60025f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff161561028d576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610284906113f4565b60405180910390fd5b60405180606001604052808360ff1681526020016001151581526020015f81525060025f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f820151815f015f6101000a81548160ff021916908360ff1602179055506020820151815f0160016101000a81548160ff0219169083151502179055506040820151816001015590505060019050919050565b5f64f196e500047fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000400005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000400015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0004000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00046000525f805f8473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160029054906101000a900460ff16905080915050919050565b5f805f805f805f808873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206040518060a00160405290815f82015f9054906101000a900460ff1660ff1660ff1681526020015f820160019054906101000a900460ff161515151581526020015f820160029054906101000a900460ff1615151515815260200160018201548152602001600282015f9054906101000a900460ff1615151515815250509050805f01518160200151826040015183606001518460800151955095509550955095505091939590929450565b5f805f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff16156105a5576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161059c906113f4565b60405180910390fd5b6040518060a001604052808360ff1681526020016001151581526020015f151581526020015f81526020015f15158152505f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f820151815f015f6101000a81548160ff021916908360ff1602179055506020820151815f0160016101000a81548160ff0219169083151502179055506040820151815f0160026101000a81548160ff021916908315150217905550606082015181600101556080820151816002015f6101000a81548160ff02191690831515021790555090505060019050919050565b5f8064f196e500037fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00030000525f7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00030001525f7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000300045260035f9054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600454915091509091565b5f805f8060025f8673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206040518060600160405290815f82015f9054906101000a900460ff1660ff1660ff1681526020015f820160019054906101000a900460ff161515151581526020016001820154815250509050805f015181602001518260400151935093509350509193909250565b5f64f196e500027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000200005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000200015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0002000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00026000525f60025f8473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f2060010154905080915050919050565b5f64f196e500017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000100005260037fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000100015260497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0001000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00016002525f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff166109e9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016109e0906114a8565b60405180910390fd5b60025f8573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff168015610a8b575060025f8473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff165b8015610ae0575060025f8373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff165b610b1f576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b169061155c565b60405180910390fd5b8273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff1614158015610b8757508173ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff1614155b8015610bbf57508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff1614155b610bfe576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610bf5906115ea565b60405180910390fd5b5f805f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206040518060a00160405290815f82015f9054906101000a900460ff1660ff1660ff1681526020015f820160019054906101000a900460ff161515151581526020015f820160029054906101000a900460ff1615151515815260200160018201548152602001600282015f9054906101000a900460ff1615151515815250509050610cd360018260600151610ebc90919063ffffffff16565b5f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f2060010181905550806040015115610e3857600381606001511015610d68576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610d5f9061169e565b60405180910390fd5b8060800151610e2957600133908060018154018082558091505060019003905f5260205f20015f9091909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060015f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206002015f6101000a81548160ff0219169083151502179055505b5f610e3757610e366116bc565b5b5b60015f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160026101000a81548160ff021916908315150217905550610e9a856003610fac565b610ea5846003610fac565b610eb0836003610fac565b60019150509392505050565b5f64f196e500057fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000500005260027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000500015260097fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0005000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00056001525f8284610f5d9190611716565b905083811015610fa2576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610f9990611793565b60405180910390fd5b8091505092915050565b64f196e500007fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000000005260027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000000015260097fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0000000552807fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00006001525f6110938260025f8673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f2060010154610ebc90919063ffffffff16565b90508060025f8573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206001018190555060045481111561112c578260035f6101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806004819055505b505050565b5f80fd5b5f60ff82169050919050565b61114a81611135565b8114611154575f80fd5b50565b5f8135905061116581611141565b92915050565b5f602082840312156111805761117f611131565b5b5f61118d84828501611157565b91505092915050565b5f8115159050919050565b6111aa81611196565b82525050565b5f6020820190506111c35f8301846111a1565b92915050565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f6111f2826111c9565b9050919050565b611202816111e8565b811461120c575f80fd5b50565b5f8135905061121d816111f9565b92915050565b5f6020828403121561123857611237611131565b5b5f6112458482850161120f565b91505092915050565b61125781611135565b82525050565b5f819050919050565b61126f8161125d565b82525050565b5f60a0820190506112885f83018861124e565b61129560208301876111a1565b6112a260408301866111a1565b6112af6060830185611266565b6112bc60808301846111a1565b9695505050505050565b6112cf816111e8565b82525050565b5f6040820190506112e85f8301856112c6565b6112f56020830184611266565b9392505050565b5f60608201905061130f5f83018661124e565b61131c60208301856111a1565b6113296040830184611266565b949350505050565b5f6020820190506113445f830184611266565b92915050565b5f805f6060848603121561136157611360611131565b5b5f61136e8682870161120f565b935050602061137f8682870161120f565b92505060406113908682870161120f565b9150509250925092565b5f82825260208201905092915050565b7f796f752061726520616c726561647920726567697374657265640000000000005f82015250565b5f6113de601a8361139a565b91506113e9826113aa565b602082019050919050565b5f6020820190508181035f83015261140b816113d2565b9050919050565b7f796f7520617265206e6f7420726567697374657265642e206265666f726520795f8201527f6f7520766f746520796f75206861766520746f20726567697374657220796f7560208201527f7273656c66000000000000000000000000000000000000000000000000000000604082015250565b5f61149260458361139a565b915061149d82611412565b606082019050919050565b5f6020820190508181035f8301526114bf81611486565b9050919050565b7f6f6e65206f72206d6f7265206f662074686520737065636966696564206164645f8201527f726573736573206172656e2774207265676973746572656420617320636f6e7460208201527f656e646572730000000000000000000000000000000000000000000000000000604082015250565b5f61154660468361139a565b9150611551826114c6565b606082019050919050565b5f6020820190508181035f8301526115738161153a565b9050919050565b7f796f7527766520747269656420746f20766f746520666f72207468652073616d5f8201527f65206d6f7265207468616e206f6e636500000000000000000000000000000000602082015250565b5f6115d460308361139a565b91506115df8261157a565b604082019050919050565b5f6020820190508181035f830152611601816115c8565b9050919050565b7f796f7527766520616c726561647920766f7465642e20496620796f75207265615f8201527f6368203320617474656d70747320796f752077696c6c20626520626c61636b2060208201527f6c69737465640000000000000000000000000000000000000000000000000000604082015250565b5f61168860468361139a565b915061169382611608565b606082019050919050565b5f6020820190508181035f8301526116b58161167c565b9050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52600160045260245ffd5b7f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b5f6117208261125d565b915061172b8361125d565b9250828201905080821115611743576117426116e9565b5b92915050565b7f536166654d6174683a206164646974696f6e206f766572666c6f7700000000005f82015250565b5f61177d601b8361139a565b915061178882611749565b602082019050919050565b5f6020820190508181035f8301526117aa81611771565b905091905056fea26469706673582212202faf02456f117c90eb9a3991240e94ee60281506e3738614cbf107a541d5919964736f6c63430008190033",
+                "compilerName": "solc",
+                "compilerParameters": {
+                    "optimizerOn": false,
+                    "optimizerRuns": null,
+                    "type": "SolcParameters",
+                    "viaIR": false
+                },
+                "compilerVersion": "0.8.25",
+                "constructorBytecode": "6080604052348015600e575f80fd5b505f60035f6101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505f6004819055506117e7806100635f395ff3fe608060405234801561000f575f80fd5b5060043610610086575f3560e01c80638e7ea5b2116100595780638e7ea5b21461014e578063d956599e1461016d578063e8fe54601461019f578063f7610be0146101cf57610086565b8063099a3fb91461008a57806309eef43e146100ba57806325508d8a146100ea5780636d9613001461011e575b5f80fd5b6100a4600480360381019061009f919061116b565b6101ff565b6040516100b191906111b0565b60405180910390f35b6100d460048036038101906100cf9190611223565b61033e565b6040516100e191906111b0565b60405180910390f35b61010460048036038101906100ff9190611223565b61042a565b604051610115959493929190611275565b60405180910390f35b6101386004803603810190610133919061116b565b610518565b60405161014591906111b0565b60405180910390f35b6101566106a3565b6040516101649291906112d5565b60405180910390f35b61018760048036038101906101829190611223565b610740565b604051610196939291906112fc565b60405180910390f35b6101b960048036038101906101b49190611223565b6107e9565b6040516101c69190611331565b60405180910390f35b6101e960048036038101906101e4919061134a565b6108ca565b6040516101f691906111b0565b60405180910390f35b5f60025f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff161561028d576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610284906113f4565b60405180910390fd5b60405180606001604052808360ff1681526020016001151581526020015f81525060025f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f820151815f015f6101000a81548160ff021916908360ff1602179055506020820151815f0160016101000a81548160ff0219169083151502179055506040820151816001015590505060019050919050565b5f64f196e500047fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000400005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000400015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0004000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00046000525f805f8473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160029054906101000a900460ff16905080915050919050565b5f805f805f805f808873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206040518060a00160405290815f82015f9054906101000a900460ff1660ff1660ff1681526020015f820160019054906101000a900460ff161515151581526020015f820160029054906101000a900460ff1615151515815260200160018201548152602001600282015f9054906101000a900460ff1615151515815250509050805f01518160200151826040015183606001518460800151955095509550955095505091939590929450565b5f805f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff16156105a5576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161059c906113f4565b60405180910390fd5b6040518060a001604052808360ff1681526020016001151581526020015f151581526020015f81526020015f15158152505f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f820151815f015f6101000a81548160ff021916908360ff1602179055506020820151815f0160016101000a81548160ff0219169083151502179055506040820151815f0160026101000a81548160ff021916908315150217905550606082015181600101556080820151816002015f6101000a81548160ff02191690831515021790555090505060019050919050565b5f8064f196e500037fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00030000525f7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00030001525f7fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000300045260035f9054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600454915091509091565b5f805f8060025f8673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206040518060600160405290815f82015f9054906101000a900460ff1660ff1660ff1681526020015f820160019054906101000a900460ff161515151581526020016001820154815250509050805f015181602001518260400151935093509350509193909250565b5f64f196e500027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000200005260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000200015260017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0002000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00026000525f60025f8473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f2060010154905080915050919050565b5f64f196e500017fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000100005260037fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000100015260497fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0001000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00016002525f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff166109e9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016109e0906114a8565b60405180910390fd5b60025f8573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff168015610a8b575060025f8473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff165b8015610ae0575060025f8373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160019054906101000a900460ff165b610b1f576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b169061155c565b60405180910390fd5b8273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff1614158015610b8757508173ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff1614155b8015610bbf57508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff1614155b610bfe576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610bf5906115ea565b60405180910390fd5b5f805f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206040518060a00160405290815f82015f9054906101000a900460ff1660ff1660ff1681526020015f820160019054906101000a900460ff161515151581526020015f820160029054906101000a900460ff1615151515815260200160018201548152602001600282015f9054906101000a900460ff1615151515815250509050610cd360018260600151610ebc90919063ffffffff16565b5f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f2060010181905550806040015115610e3857600381606001511015610d68576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610d5f9061169e565b60405180910390fd5b8060800151610e2957600133908060018154018082558091505060019003905f5260205f20015f9091909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060015f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206002015f6101000a81548160ff0219169083151502179055505b5f610e3757610e366116bc565b5b5b60015f803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f0160026101000a81548160ff021916908315150217905550610e9a856003610fac565b610ea5846003610fac565b610eb0836003610fac565b60019150509392505050565b5f64f196e500057fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000500005260027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000500015260097fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0005000552817fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00056001525f8284610f5d9190611716565b905083811015610fa2576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610f9990611793565b60405180910390fd5b8091505092915050565b64f196e500007fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000000005260027fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff000000015260097fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff0000000552807fffffff6e4604afefe123321beef1b01fffffffffffffffffffffffff00006001525f6110938260025f8673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f2060010154610ebc90919063ffffffff16565b90508060025f8573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f206001018190555060045481111561112c578260035f6101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806004819055505b505050565b5f80fd5b5f60ff82169050919050565b61114a81611135565b8114611154575f80fd5b50565b5f8135905061116581611141565b92915050565b5f602082840312156111805761117f611131565b5b5f61118d84828501611157565b91505092915050565b5f8115159050919050565b6111aa81611196565b82525050565b5f6020820190506111c35f8301846111a1565b92915050565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f6111f2826111c9565b9050919050565b611202816111e8565b811461120c575f80fd5b50565b5f8135905061121d816111f9565b92915050565b5f6020828403121561123857611237611131565b5b5f6112458482850161120f565b91505092915050565b61125781611135565b82525050565b5f819050919050565b61126f8161125d565b82525050565b5f60a0820190506112885f83018861124e565b61129560208301876111a1565b6112a260408301866111a1565b6112af6060830185611266565b6112bc60808301846111a1565b9695505050505050565b6112cf816111e8565b82525050565b5f6040820190506112e85f8301856112c6565b6112f56020830184611266565b9392505050565b5f60608201905061130f5f83018661124e565b61131c60208301856111a1565b6113296040830184611266565b949350505050565b5f6020820190506113445f830184611266565b92915050565b5f805f6060848603121561136157611360611131565b5b5f61136e8682870161120f565b935050602061137f8682870161120f565b92505060406113908682870161120f565b9150509250925092565b5f82825260208201905092915050565b7f796f752061726520616c726561647920726567697374657265640000000000005f82015250565b5f6113de601a8361139a565b91506113e9826113aa565b602082019050919050565b5f6020820190508181035f83015261140b816113d2565b9050919050565b7f796f7520617265206e6f7420726567697374657265642e206265666f726520795f8201527f6f7520766f746520796f75206861766520746f20726567697374657220796f7560208201527f7273656c66000000000000000000000000000000000000000000000000000000604082015250565b5f61149260458361139a565b915061149d82611412565b606082019050919050565b5f6020820190508181035f8301526114bf81611486565b9050919050565b7f6f6e65206f72206d6f7265206f662074686520737065636966696564206164645f8201527f726573736573206172656e2774207265676973746572656420617320636f6e7460208201527f656e646572730000000000000000000000000000000000000000000000000000604082015250565b5f61154660468361139a565b9150611551826114c6565b606082019050919050565b5f6020820190508181035f8301526115738161153a565b9050919050565b7f796f7527766520747269656420746f20766f746520666f72207468652073616d5f8201527f65206d6f7265207468616e206f6e636500000000000000000000000000000000602082015250565b5f6115d460308361139a565b91506115df8261157a565b604082019050919050565b5f6020820190508181035f830152611601816115c8565b9050919050565b7f796f7527766520616c726561647920766f7465642e20496620796f75207265615f8201527f6368203320617474656d70747320796f752077696c6c20626520626c61636b2060208201527f6c69737465640000000000000000000000000000000000000000000000000000604082015250565b5f61168860468361139a565b915061169382611608565b606082019050919050565b5f6020820190508181035f8301526116b58161167c565b9050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52600160045260245ffd5b7f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b5f6117208261125d565b915061172b8361125d565b9250828201905080821115611743576117426116e9565b5b92915050565b7f536166654d6174683a206164646974696f6e206f766572666c6f7700000000005f82015250565b5f61177d601b8361139a565b915061178882611749565b602082019050919050565b5f6020820190508181035f8301526117aa81611771565b905091905056fea26469706673582212202faf02456f117c90eb9a3991240e94ee60281506e3738614cbf107a541d5919964736f6c63430008190033",
+                "constructorSrcmap": "1118:5425:0:-:0;;;1556:78;;;;;;;;;;1597:1;1580:6;;:19;;;;;;;;;;;;;;;;;;1626:1;1609:14;:18;;;;1118:5425;;;;;;",
+                "file": "Borda.sol",
+                "immutables": [],
+                "internalFunctions": {
+                    "0xf196e50000": {
+                        "canonicalId": "Borda.sol|Borda",
+                        "declaringContract": "Borda",
+                        "method": {
+                            "contractName": "Borda",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "voteTo",
+                            "notpayable": true,
+                            "paramNames": [
+                                "contender",
+                                "points"
+                            ],
+                            "returns": [],
+                            "sighash": "0",
+                            "stateMutability": "nonpayable",
+                            "visibility": "private"
+                        }
+                    },
+                    "0xf196e50001": {
+                        "canonicalId": "Borda.sol|Borda",
+                        "declaringContract": "Borda",
+                        "method": {
+                            "contractName": "Borda",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "vote",
+                            "notpayable": true,
+                            "paramNames": [
+                                "first",
+                                "second",
+                                "third"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "f7610be0",
+                            "stateMutability": "nonpayable",
+                            "visibility": "public"
+                        }
+                    },
+                    "0xf196e50002": {
+                        "canonicalId": "Borda.sol|Borda",
+                        "declaringContract": "Borda",
+                        "method": {
+                            "contractName": "Borda",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "getPointsOfContender",
+                            "notpayable": true,
+                            "paramNames": [
+                                "contender"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "e8fe5460",
+                            "stateMutability": "view",
+                            "visibility": "public"
+                        }
+                    },
+                    "0xf196e50003": {
+                        "canonicalId": "Borda.sol|Borda",
+                        "declaringContract": "Borda",
+                        "method": {
+                            "contractName": "Borda",
+                            "fullArgs": [],
+                            "isLibrary": false,
+                            "name": "getWinner",
+                            "notpayable": true,
+                            "paramNames": [],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "8e7ea5b2",
+                            "stateMutability": "view",
+                            "visibility": "public"
+                        }
+                    },
+                    "0xf196e50004": {
+                        "canonicalId": "Borda.sol|Borda",
+                        "declaringContract": "Borda",
+                        "method": {
+                            "contractName": "Borda",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "address",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": false,
+                            "name": "hasVoted",
+                            "notpayable": true,
+                            "paramNames": [
+                                "voter"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "bool",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "09eef43e",
+                            "stateMutability": "view",
+                            "visibility": "public"
+                        }
+                    },
+                    "0xf196e50005": {
+                        "canonicalId": "Borda.sol|SafeMath",
+                        "declaringContract": "SafeMath",
+                        "method": {
+                            "contractName": "SafeMath",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "safeAdd",
+                            "notpayable": true,
+                            "paramNames": [
+                                "a",
+                                "b"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "stateMutability": "pure",
+                            "visibility": "internal"
+                        }
+                    },
+                    "0xf196e50006": {
+                        "canonicalId": "Borda.sol|SafeMath",
+                        "declaringContract": "SafeMath",
+                        "method": {
+                            "contractName": "SafeMath",
+                            "fullArgs": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                },
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "isLibrary": true,
+                            "name": "safeSub",
+                            "notpayable": true,
+                            "paramNames": [
+                                "x",
+                                "y"
+                            ],
+                            "returns": [
+                                {
+                                    "location": "stack",
+                                    "typeDesc": {
+                                        "primitiveName": "uint256",
+                                        "type": "Primitive"
+                                    }
+                                }
+                            ],
+                            "sighash": "0",
+                            "stateMutability": "pure",
+                            "visibility": "internal"
+                        }
+                    }
+                },
+                "lang": "Solidity",
+                "methods": [
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "constructor",
+                        "notpayable": true,
+                        "paramNames": [],
+                        "returns": [],
+                        "sighash": "0",
+                        "stateMutability": "nonpayable",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "getPointsOfContender",
+                        "notpayable": true,
+                        "paramNames": [
+                            "contender"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "e8fe5460",
+                        "stateMutability": "view",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "registerVoter",
+                        "notpayable": true,
+                        "paramNames": [
+                            "age"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "6d961300",
+                        "stateMutability": "nonpayable",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "getFullContenderDetails",
+                        "notpayable": true,
+                        "paramNames": [
+                            "contender"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "d956599e",
+                        "stateMutability": "view",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "vote",
+                        "notpayable": true,
+                        "paramNames": [
+                            "first",
+                            "second",
+                            "third"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "f7610be0",
+                        "stateMutability": "nonpayable",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "getFullVoterDetails",
+                        "notpayable": true,
+                        "paramNames": [
+                            "voter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "25508d8a",
+                        "stateMutability": "view",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [],
+                        "isLibrary": false,
+                        "name": "getWinner",
+                        "notpayable": true,
+                        "paramNames": [],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "8e7ea5b2",
+                        "stateMutability": "view",
+                        "visibility": "public"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "registerContender",
+                        "notpayable": true,
+                        "paramNames": [
+                            "age"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "099a3fb9",
+                        "stateMutability": "nonpayable",
+                        "visibility": "external"
+                    },
+                    {
+                        "contractName": "Borda",
+                        "fullArgs": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "isLibrary": false,
+                        "name": "hasVoted",
+                        "notpayable": true,
+                        "paramNames": [
+                            "voter"
+                        ],
+                        "returns": [
+                            {
+                                "location": "stack",
+                                "typeDesc": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "sighash": "09eef43e",
+                        "stateMutability": "view",
+                        "visibility": "public"
+                    }
+                ],
+                "name": "Borda",
+                "original_file": "Borda.sol",
+                "solidityTypes": [
+                    {
+                        "astId": 460,
+                        "canonicalId": "IBorda.sol|IBorda.Contenders",
+                        "containingContract": "IBorda",
+                        "structMembers": [
+                            {
+                                "name": "age",
+                                "type": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "registered",
+                                "type": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "points",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "structName": "Contenders",
+                        "type": "UserDefinedStruct"
+                    },
+                    {
+                        "astId": 471,
+                        "canonicalId": "IBorda.sol|IBorda.Voters",
+                        "containingContract": "IBorda",
+                        "structMembers": [
+                            {
+                                "name": "age",
+                                "type": {
+                                    "primitiveName": "uint8",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "registered",
+                                "type": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "voted",
+                                "type": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "vote_attempts",
+                                "type": {
+                                    "primitiveName": "uint256",
+                                    "type": "Primitive"
+                                }
+                            },
+                            {
+                                "name": "black_listed",
+                                "type": {
+                                    "primitiveName": "bool",
+                                    "type": "Primitive"
+                                }
+                            }
+                        ],
+                        "structName": "Voters",
+                        "type": "UserDefinedStruct"
+                    }
+                ],
+                "srcmap": "1118:5425:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4034:271;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;2183:492;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;3061:358;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;;;;:::i;:::-;;;;;;;;3731:297;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;2681:374;;;:::i;:::-;;;;;;;;:::i;:::-;;;;;;;;3425:300;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;;:::i;:::-;;;;;;;;1640:537;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;4311:1538;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;4034:271;4099:4;4125:11;:23;4137:10;4125:23;;;;;;;;;;;;;;;:34;;;;;;;;;;;;4124:35;4115:75;;;;;;;;;;;;:::i;:::-;;;;;;;;;4226:51;;;;;;;;4243:3;4226:51;;;;;;4260:4;4226:51;;;;;;4274:1;4226:51;;;4200:11;:23;4212:10;4200:23;;;;;;;;;;;;;;;:77;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4294:4;4287:11;;4034:271;;;:::o;2183:492::-;2245:4;2338:13;2270:66;2263:89;2428:1;2360:66;2353:77;2506:1;2438:66;2431:77;2584:5;2516:66;2509:81;2601:16;2620:7;:14;2628:5;2620:14;;;;;;;;;;;;;;;:20;;;;;;;;;;;;2601:39;;2657:11;2650:18;;;2183:492;;;:::o;3061:358::-;3136:9;3147:15;3164:10;3176:21;3199:17;3228:27;3258:7;:14;3266:5;3258:14;;;;;;;;;;;;;;;3228:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3290:13;:17;;;3309:13;:24;;;3335:13;:19;;;3356:13;:27;;;3385:13;:26;;;3282:130;;;;;;;;;;;3061:358;;;;;;;:::o;3731:297::-;3792:4;3818:7;:19;3826:10;3818:19;;;;;;;;;;;;;;;:30;;;;;;;;;;;;3817:31;3808:71;;;;;;;;;;;;:::i;:::-;;;;;;;;;3911:89;;;;;;;;3924:3;3911:89;;;;;;3941:4;3911:89;;;;;;3954:5;3911:89;;;;;;3976:1;3911:89;;;;3993:5;3911:89;;;;;3889:7;:19;3897:10;3889:19;;;;;;;;;;;;;;;:111;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4017:4;4010:11;;3731:297;;;:::o;2681:374::-;2731:7;2740;2836:13;2768:66;2761:89;2926:1;2858:66;2851:77;3004:1;2936:66;2929:77;3025:6;;;;;;;;;;;3033:14;;3017:31;;;;2681:374;;:::o;3425:300::-;3508:9;3519:15;3536:14;3562:35;3600:11;:22;3612:9;3600:22;;;;;;;;;;;;;;;3562:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3640:17;:21;;;3663:17;:28;;;3693:17;:24;;;3632:86;;;;;;;3425:300;;;;;:::o;1640:537::-;1718:7;1814:13;1746:66;1739:89;1904:1;1836:66;1829:77;1982:1;1914:66;1907:77;2060:9;1992:66;1985:85;2081:24;2108:11;:22;2120:9;2108:22;;;;;;;;;;;;;;;:29;;;2081:56;;2154:16;2147:23;;;1640:537;;;:::o;4311:1538::-;4395:4;4488:13;4420:66;4413:89;4578:1;4510:66;4503:77;4656:2;4588:66;4581:78;4735:5;4667:66;4660:81;4761:7;:19;4769:10;4761:19;;;;;;;;;;;;;;;:30;;;;;;;;;;;;4752:113;;;;;;;;;;;;:::i;:::-;;;;;;;;;4884:11;:18;4896:5;4884:18;;;;;;;;;;;;;;;:29;;;;;;;;;;;;:63;;;;;4917:11;:19;4929:6;4917:19;;;;;;;;;;;;;;;:30;;;;;;;;;;;;4884:63;:96;;;;;4951:11;:18;4963:5;4951:18;;;;;;;;;;;;;;;:29;;;;;;;;;;;;4884:96;4875:180;;;;;;;;;;;;:::i;:::-;;;;;;;;;5083:6;5074:15;;:5;:15;;;;:33;;;;;5102:5;5093:14;;:5;:14;;;;5074:33;:52;;;;;5121:5;5111:15;;:6;:15;;;;5074:52;5065:114;;;;;;;;;;;;:::i;:::-;;;;;;;;;5198:27;5228:7;:19;5236:10;5228:19;;;;;;;;;;;;;;;5198:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5293:38;5329:1;5293:13;:27;;;:35;;:38;;;;:::i;:::-;5257:7;:19;5265:10;5257:19;;;;;;;;;;;;;;;:33;;:74;;;;5345:13;:19;;;5341:350;;;5417:1;5386:13;:27;;;:32;;5378:115;;;;;;;;;;;;:::i;:::-;;;;;;;;;5511:13;:26;;;5506:149;;5556:10;5572;5556:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5637:4;5602:7;:19;5610:10;5602:19;;;;;;;;;;;;;;;:32;;;:39;;;;;;;;;;;;;;;;;;5506:149;5674:5;5667:13;;;;:::i;:::-;;5341:350;5729:4;5701:7;:19;5709:10;5701:19;;;;;;;;;;;;;;;:25;;;:32;;;;;;;;;;;;;;;;;;5743:16;5750:5;5757:1;5743:6;:16::i;:::-;5769:17;5776:6;5784:1;5769:6;:17::i;:::-;5796:16;5803:5;5810:1;5796:6;:16::i;:::-;5838:4;5831:11;;;4311:1538;;;;;:::o;87:515::-;149:7;245:13;177:66;170:89;335:1;267:66;260:77;413:1;345:66;338:77;491:1;423:66;416:77;504:9;520:1;516;:5;;;;:::i;:::-;504:17;;544:1;539;:6;;531:46;;;;;;;;;;;;:::i;:::-;;;;;;;;;594:1;587:8;;;87:515;;;;:::o;5855:685::-;6001:13;5933:66;5926:89;6091:1;6023:66;6016:77;6169:1;6101:66;6094:77;6247:6;6179:66;6172:82;6265:24;6292:45;6330:6;6292:11;:22;6304:9;6292:22;;;;;;;;;;;;;;;:29;;;:37;;:45;;;;:::i;:::-;6265:72;;6379:16;6347:11;:22;6359:9;6347:22;;;;;;;;;;;;;;;:29;;:48;;;;6428:14;;6409:16;:33;6405:129;;;6467:9;6458:6;;:18;;;;;;;;;;;;;;;;;;6507:16;6490:14;:33;;;;6405:129;5914:626;5855:685;;:::o;88:117:2:-;197:1;194;187:12;334:86;369:7;409:4;402:5;398:16;387:27;;334:86;;;:::o;426:118::-;497:22;513:5;497:22;:::i;:::-;490:5;487:33;477:61;;534:1;531;524:12;477:61;426:118;:::o;550:135::-;594:5;632:6;619:20;610:29;;648:31;673:5;648:31;:::i;:::-;550:135;;;;:::o;691:325::-;748:6;797:2;785:9;776:7;772:23;768:32;765:119;;;803:79;;:::i;:::-;765:119;923:1;948:51;991:7;982:6;971:9;967:22;948:51;:::i;:::-;938:61;;894:115;691:325;;;;:::o;1022:90::-;1056:7;1099:5;1092:13;1085:21;1074:32;;1022:90;;;:::o;1118:109::-;1199:21;1214:5;1199:21;:::i;:::-;1194:3;1187:34;1118:109;;:::o;1233:210::-;1320:4;1358:2;1347:9;1343:18;1335:26;;1371:65;1433:1;1422:9;1418:17;1409:6;1371:65;:::i;:::-;1233:210;;;;:::o;1449:126::-;1486:7;1526:42;1519:5;1515:54;1504:65;;1449:126;;;:::o;1581:96::-;1618:7;1647:24;1665:5;1647:24;:::i;:::-;1636:35;;1581:96;;;:::o;1683:122::-;1756:24;1774:5;1756:24;:::i;:::-;1749:5;1746:35;1736:63;;1795:1;1792;1785:12;1736:63;1683:122;:::o;1811:139::-;1857:5;1895:6;1882:20;1873:29;;1911:33;1938:5;1911:33;:::i;:::-;1811:139;;;;:::o;1956:329::-;2015:6;2064:2;2052:9;2043:7;2039:23;2035:32;2032:119;;;2070:79;;:::i;:::-;2032:119;2190:1;2215:53;2260:7;2251:6;2240:9;2236:22;2215:53;:::i;:::-;2205:63;;2161:117;1956:329;;;;:::o;2291:112::-;2374:22;2390:5;2374:22;:::i;:::-;2369:3;2362:35;2291:112;;:::o;2409:77::-;2446:7;2475:5;2464:16;;2409:77;;;:::o;2492:118::-;2579:24;2597:5;2579:24;:::i;:::-;2574:3;2567:37;2492:118;;:::o;2616:620::-;2799:4;2837:3;2826:9;2822:19;2814:27;;2851:67;2915:1;2904:9;2900:17;2891:6;2851:67;:::i;:::-;2928:66;2990:2;2979:9;2975:18;2966:6;2928:66;:::i;:::-;3004;3066:2;3055:9;3051:18;3042:6;3004:66;:::i;:::-;3080:72;3148:2;3137:9;3133:18;3124:6;3080:72;:::i;:::-;3162:67;3224:3;3213:9;3209:19;3200:6;3162:67;:::i;:::-;2616:620;;;;;;;;:::o;3242:118::-;3329:24;3347:5;3329:24;:::i;:::-;3324:3;3317:37;3242:118;;:::o;3366:332::-;3487:4;3525:2;3514:9;3510:18;3502:26;;3538:71;3606:1;3595:9;3591:17;3582:6;3538:71;:::i;:::-;3619:72;3687:2;3676:9;3672:18;3663:6;3619:72;:::i;:::-;3366:332;;;;;:::o;3704:422::-;3843:4;3881:2;3870:9;3866:18;3858:26;;3894:67;3958:1;3947:9;3943:17;3934:6;3894:67;:::i;:::-;3971:66;4033:2;4022:9;4018:18;4009:6;3971:66;:::i;:::-;4047:72;4115:2;4104:9;4100:18;4091:6;4047:72;:::i;:::-;3704:422;;;;;;:::o;4132:222::-;4225:4;4263:2;4252:9;4248:18;4240:26;;4276:71;4344:1;4333:9;4329:17;4320:6;4276:71;:::i;:::-;4132:222;;;;:::o;4360:619::-;4437:6;4445;4453;4502:2;4490:9;4481:7;4477:23;4473:32;4470:119;;;4508:79;;:::i;:::-;4470:119;4628:1;4653:53;4698:7;4689:6;4678:9;4674:22;4653:53;:::i;:::-;4643:63;;4599:117;4755:2;4781:53;4826:7;4817:6;4806:9;4802:22;4781:53;:::i;:::-;4771:63;;4726:118;4883:2;4909:53;4954:7;4945:6;4934:9;4930:22;4909:53;:::i;:::-;4899:63;;4854:118;4360:619;;;;;:::o;4985:169::-;5069:11;5103:6;5098:3;5091:19;5143:4;5138:3;5134:14;5119:29;;4985:169;;;;:::o;5160:176::-;5300:28;5296:1;5288:6;5284:14;5277:52;5160:176;:::o;5342:366::-;5484:3;5505:67;5569:2;5564:3;5505:67;:::i;:::-;5498:74;;5581:93;5670:3;5581:93;:::i;:::-;5699:2;5694:3;5690:12;5683:19;;5342:366;;;:::o;5714:419::-;5880:4;5918:2;5907:9;5903:18;5895:26;;5967:9;5961:4;5957:20;5953:1;5942:9;5938:17;5931:47;5995:131;6121:4;5995:131;:::i;:::-;5987:139;;5714:419;;;:::o;6139:293::-;6279:34;6275:1;6267:6;6263:14;6256:58;6348:34;6343:2;6335:6;6331:15;6324:59;6417:7;6412:2;6404:6;6400:15;6393:32;6139:293;:::o;6438:366::-;6580:3;6601:67;6665:2;6660:3;6601:67;:::i;:::-;6594:74;;6677:93;6766:3;6677:93;:::i;:::-;6795:2;6790:3;6786:12;6779:19;;6438:366;;;:::o;6810:419::-;6976:4;7014:2;7003:9;6999:18;6991:26;;7063:9;7057:4;7053:20;7049:1;7038:9;7034:17;7027:47;7091:131;7217:4;7091:131;:::i;:::-;7083:139;;6810:419;;;:::o;7235:294::-;7375:34;7371:1;7363:6;7359:14;7352:58;7444:34;7439:2;7431:6;7427:15;7420:59;7513:8;7508:2;7500:6;7496:15;7489:33;7235:294;:::o;7535:366::-;7677:3;7698:67;7762:2;7757:3;7698:67;:::i;:::-;7691:74;;7774:93;7863:3;7774:93;:::i;:::-;7892:2;7887:3;7883:12;7876:19;;7535:366;;;:::o;7907:419::-;8073:4;8111:2;8100:9;8096:18;8088:26;;8160:9;8154:4;8150:20;8146:1;8135:9;8131:17;8124:47;8188:131;8314:4;8188:131;:::i;:::-;8180:139;;7907:419;;;:::o;8332:235::-;8472:34;8468:1;8460:6;8456:14;8449:58;8541:18;8536:2;8528:6;8524:15;8517:43;8332:235;:::o;8573:366::-;8715:3;8736:67;8800:2;8795:3;8736:67;:::i;:::-;8729:74;;8812:93;8901:3;8812:93;:::i;:::-;8930:2;8925:3;8921:12;8914:19;;8573:366;;;:::o;8945:419::-;9111:4;9149:2;9138:9;9134:18;9126:26;;9198:9;9192:4;9188:20;9184:1;9173:9;9169:17;9162:47;9226:131;9352:4;9226:131;:::i;:::-;9218:139;;8945:419;;;:::o;9370:294::-;9510:34;9506:1;9498:6;9494:14;9487:58;9579:34;9574:2;9566:6;9562:15;9555:59;9648:8;9643:2;9635:6;9631:15;9624:33;9370:294;:::o;9670:366::-;9812:3;9833:67;9897:2;9892:3;9833:67;:::i;:::-;9826:74;;9909:93;9998:3;9909:93;:::i;:::-;10027:2;10022:3;10018:12;10011:19;;9670:366;;;:::o;10042:419::-;10208:4;10246:2;10235:9;10231:18;10223:26;;10295:9;10289:4;10285:20;10281:1;10270:9;10266:17;10259:47;10323:131;10449:4;10323:131;:::i;:::-;10315:139;;10042:419;;;:::o;10467:180::-;10515:77;10512:1;10505:88;10612:4;10609:1;10602:15;10636:4;10633:1;10626:15;10653:180;10701:77;10698:1;10691:88;10798:4;10795:1;10788:15;10822:4;10819:1;10812:15;10839:191;10879:3;10898:20;10916:1;10898:20;:::i;:::-;10893:25;;10932:20;10950:1;10932:20;:::i;:::-;10927:25;;10975:1;10972;10968:9;10961:16;;10996:3;10993:1;10990:10;10987:36;;;11003:18;;:::i;:::-;10987:36;10839:191;;;;:::o;11036:177::-;11176:29;11172:1;11164:6;11160:14;11153:53;11036:177;:::o;11219:366::-;11361:3;11382:67;11446:2;11441:3;11382:67;:::i;:::-;11375:74;;11458:93;11547:3;11458:93;:::i;:::-;11576:2;11571:3;11567:12;11560:19;;11219:366;;;:::o;11591:419::-;11757:4;11795:2;11784:9;11780:18;11772:26;;11844:9;11838:4;11834:20;11830:1;11819:9;11815:17;11808:47;11872:131;11998:4;11872:131;:::i;:::-;11864:139;;11591:419;;;:::o",
+                "storageLayout": {
+                    "storage": [
+                        {
+                            "astId": 64,
+                            "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                            "descriptor": {
+                                "annotations": [
+                                    {
+                                        "numberOfBytes": "32",
+                                        "type": "StorageAnnotation"
+                                    }
+                                ],
+                                "mappingKeyType": {
+                                    "annotations": [
+                                        {
+                                            "numberOfBytes": "20",
+                                            "type": "StorageAnnotation"
+                                        }
+                                    ],
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                },
+                                "mappingValueType": {
+                                    "annotations": [
+                                        {
+                                            "numberOfBytes": "96",
+                                            "type": "StorageAnnotation"
+                                        }
+                                    ],
+                                    "astId": 471,
+                                    "canonicalId": "IBorda.sol|IBorda.Voters",
+                                    "containingContract": "IBorda",
+                                    "structMembers": [
+                                        {
+                                            "name": "age",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "1",
+                                                        "offset": 0,
+                                                        "slot": "0",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "uint8",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "registered",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "1",
+                                                        "offset": 1,
+                                                        "slot": "0",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "bool",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "voted",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "1",
+                                                        "offset": 2,
+                                                        "slot": "0",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "bool",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "vote_attempts",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "32",
+                                                        "offset": 0,
+                                                        "slot": "1",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "uint256",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "black_listed",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "1",
+                                                        "offset": 0,
+                                                        "slot": "2",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "bool",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "Voters",
+                                    "type": "UserDefinedStruct"
+                                },
+                                "type": "Mapping"
+                            },
+                            "label": "_voters",
+                            "offset": 0,
+                            "slot": "0",
+                            "type": "t_mapping(t_address,t_struct(Voters)471_storage)"
+                        },
+                        {
+                            "astId": 67,
+                            "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                            "descriptor": {
+                                "annotations": [
+                                    {
+                                        "numberOfBytes": "32",
+                                        "type": "StorageAnnotation"
+                                    }
+                                ],
+                                "dynamicArrayBaseType": {
+                                    "annotations": [
+                                        {
+                                            "numberOfBytes": "20",
+                                            "type": "StorageAnnotation"
+                                        }
+                                    ],
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                },
+                                "type": "Array"
+                            },
+                            "label": "_blackList",
+                            "offset": 0,
+                            "slot": "1",
+                            "type": "t_array(t_address)dyn_storage"
+                        },
+                        {
+                            "astId": 72,
+                            "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                            "descriptor": {
+                                "annotations": [
+                                    {
+                                        "numberOfBytes": "32",
+                                        "type": "StorageAnnotation"
+                                    }
+                                ],
+                                "mappingKeyType": {
+                                    "annotations": [
+                                        {
+                                            "numberOfBytes": "20",
+                                            "type": "StorageAnnotation"
+                                        }
+                                    ],
+                                    "primitiveName": "address",
+                                    "type": "Primitive"
+                                },
+                                "mappingValueType": {
+                                    "annotations": [
+                                        {
+                                            "numberOfBytes": "64",
+                                            "type": "StorageAnnotation"
+                                        }
+                                    ],
+                                    "astId": 460,
+                                    "canonicalId": "IBorda.sol|IBorda.Contenders",
+                                    "containingContract": "IBorda",
+                                    "structMembers": [
+                                        {
+                                            "name": "age",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "1",
+                                                        "offset": 0,
+                                                        "slot": "0",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "uint8",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "registered",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "1",
+                                                        "offset": 1,
+                                                        "slot": "0",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "bool",
+                                                "type": "Primitive"
+                                            }
+                                        },
+                                        {
+                                            "name": "points",
+                                            "type": {
+                                                "annotations": [
+                                                    {
+                                                        "numberOfBytes": "32",
+                                                        "offset": 0,
+                                                        "slot": "1",
+                                                        "type": "StorageAnnotation"
+                                                    }
+                                                ],
+                                                "primitiveName": "uint256",
+                                                "type": "Primitive"
+                                            }
+                                        }
+                                    ],
+                                    "structName": "Contenders",
+                                    "type": "UserDefinedStruct"
+                                },
+                                "type": "Mapping"
+                            },
+                            "label": "_contenders",
+                            "offset": 0,
+                            "slot": "2",
+                            "type": "t_mapping(t_address,t_struct(Contenders)460_storage)"
+                        },
+                        {
+                            "astId": 74,
+                            "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                            "descriptor": {
+                                "annotations": [
+                                    {
+                                        "numberOfBytes": "20",
+                                        "type": "StorageAnnotation"
+                                    }
+                                ],
+                                "primitiveName": "address",
+                                "type": "Primitive"
+                            },
+                            "label": "winner",
+                            "offset": 0,
+                            "slot": "3",
+                            "type": "t_address"
+                        },
+                        {
+                            "astId": 76,
+                            "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                            "descriptor": {
+                                "annotations": [
+                                    {
+                                        "numberOfBytes": "32",
+                                        "type": "StorageAnnotation"
+                                    }
+                                ],
+                                "primitiveName": "uint256",
+                                "type": "Primitive"
+                            },
+                            "label": "pointsOfWinner",
+                            "offset": 0,
+                            "slot": "4",
+                            "type": "t_uint256"
+                        }
+                    ],
+                    "types": {
+                        "t_address": {
+                            "encoding": "inplace",
+                            "label": "address",
+                            "numberOfBytes": "20"
+                        },
+                        "t_array(t_address)dyn_storage": {
+                            "base": "t_address",
+                            "encoding": "dynamic_array",
+                            "label": "address[]",
+                            "numberOfBytes": "32"
+                        },
+                        "t_bool": {
+                            "encoding": "inplace",
+                            "label": "bool",
+                            "numberOfBytes": "1"
+                        },
+                        "t_mapping(t_address,t_struct(Contenders)460_storage)": {
+                            "encoding": "mapping",
+                            "key": "t_address",
+                            "label": "mapping(address => struct IBorda.Contenders)",
+                            "numberOfBytes": "32",
+                            "value": "t_struct(Contenders)460_storage"
+                        },
+                        "t_mapping(t_address,t_struct(Voters)471_storage)": {
+                            "encoding": "mapping",
+                            "key": "t_address",
+                            "label": "mapping(address => struct IBorda.Voters)",
+                            "numberOfBytes": "32",
+                            "value": "t_struct(Voters)471_storage"
+                        },
+                        "t_struct(Contenders)460_storage": {
+                            "encoding": "inplace",
+                            "label": "struct IBorda.Contenders",
+                            "members": [
+                                {
+                                    "astId": 455,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "age",
+                                    "offset": 0,
+                                    "slot": "0",
+                                    "type": "t_uint8"
+                                },
+                                {
+                                    "astId": 457,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "registered",
+                                    "offset": 1,
+                                    "slot": "0",
+                                    "type": "t_bool"
+                                },
+                                {
+                                    "astId": 459,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "points",
+                                    "offset": 0,
+                                    "slot": "1",
+                                    "type": "t_uint256"
+                                }
+                            ],
+                            "numberOfBytes": "64"
+                        },
+                        "t_struct(Voters)471_storage": {
+                            "encoding": "inplace",
+                            "label": "struct IBorda.Voters",
+                            "members": [
+                                {
+                                    "astId": 462,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "age",
+                                    "offset": 0,
+                                    "slot": "0",
+                                    "type": "t_uint8"
+                                },
+                                {
+                                    "astId": 464,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "registered",
+                                    "offset": 1,
+                                    "slot": "0",
+                                    "type": "t_bool"
+                                },
+                                {
+                                    "astId": 466,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "voted",
+                                    "offset": 2,
+                                    "slot": "0",
+                                    "type": "t_bool"
+                                },
+                                {
+                                    "astId": 468,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "vote_attempts",
+                                    "offset": 0,
+                                    "slot": "1",
+                                    "type": "t_uint256"
+                                },
+                                {
+                                    "astId": 470,
+                                    "contract": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_23_38_808/.certora_sources/Borda.sol:Borda",
+                                    "label": "black_listed",
+                                    "offset": 0,
+                                    "slot": "2",
+                                    "type": "t_bool"
+                                }
+                            ],
+                            "numberOfBytes": "96"
+                        },
+                        "t_uint256": {
+                            "encoding": "inplace",
+                            "label": "uint256",
+                            "numberOfBytes": "32"
+                        },
+                        "t_uint8": {
+                            "encoding": "inplace",
+                            "label": "uint8",
+                            "numberOfBytes": "1"
+                        }
+                    }
+                },
+                "types": [],
+                "varmap": ""
+            }
+        ],
+        "legacyStructLinking": {},
+        "library_addresses": [],
+        "primary_contract": "Borda",
+        "primary_contract_address": "00000000ce4604a0000000000000000000000003",
+        "prototypeFor": [],
+        "sdc_name": "Borda.sol_0",
+        "sourceDir": ".post_autofinders.0",
+        "srclist": {
+            "0": "Borda.sol",
+            "1": "IBorda.sol"
+        },
+        "state": {},
+        "structLinkingInfo": {}
+    }
+}

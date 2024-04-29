@@ -1,0 +1,14 @@
+Saving last configuration file to .certora_internal/24_04_21_16_56_37_038/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_56_37_038/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec, found the imports: []
+build failed
+Failure traceback: 
+CertoraUserInputError: Could not parse /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec due to the following errors:
+/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec:1:8: Did not expect the symbol '{'
+Encountered an error running Certora Prover:
+Could not parse /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec due to the following errors:
+/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec:1:8: Did not expect the symbol '{'

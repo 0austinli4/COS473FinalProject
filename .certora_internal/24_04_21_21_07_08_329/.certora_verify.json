@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "gpt_slither",
+    "specfile": "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/ERC20.spec",
+    "specfileOrigRelpath": "ERC20.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

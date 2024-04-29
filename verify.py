@@ -11,36 +11,50 @@ parser = argparse.ArgumentParser(description='Analyze Solidity files with Slithe
 parser.add_argument('file', type=str, help='Path to the Solidity file to be analyzed.')
 parser.add_argument('spec', type=str, help='Path to the Spec file to be analyzed.')
 
-
 # Parse the arguments
 args = parser.parse_args()
 
 def main():
-    file_path = args.file
+    file_path_solidity = args.file
     spec_path = args.spec
+    max_runs_slither = 3
+    max_runs_certora = 2
 
-    # SLITHER RUNS
-    slither_output = slither.run_slither(file_path)
+    for i in range(max_runs_slither):
+        print('slither run', i)
+        slither_log_path = slither.run_slither(file_path_solidity, i)
 
-    requestStringSlither = ' '.join(slither.parse_outputSlither(slither_output))
+        if slither.check_complete(slither_log_path):
+            break
 
-    completion = gpt.openAIAnalysisSlither(file_path, requestStringSlither)
+        # # get request string based on error
+        requestStringSlither = ' '.join(slither.parse_outputSlither(slither_log_path))
 
-    gptString_slither, intermediate_sol_Slither = gpt.parse_gpt(completion)
+        # # send output to GPT for verification
+        gpt_completion_slither = gpt.openAIAnalysisSlither(file_path_solidity, spec_path, requestStringSlither, i)
+
+        # parse GPT output to write to sol file
+        gptString_slither = gpt.parse_gpt(gpt_completion_slither, file_path_solidity)
+
+        slither.outputToUser(gptString_slither, requestStringSlither, i)
     
-    # return slither_output
-    slither.outputToUser(gptString_slither, requestStringSlither)
+    for i in range(max_runs_certora):
+        certora_log_name = certora.run_certora(file_path_solidity, spec_path, i)
 
-    # CERTORA RUN
-    requestStringCertora = certora.run_certora(intermediate_sol_Slither, spec_path)
-    completion = gpt.openAIAnalysisCertora(file_path, requestStringCertora)
+        certora.clean_certoraLog(certora_log_name)
 
-    userOutputString =  certora.parse_certora(requestStringCertora)
-    gptString_certora, intermediate_sol_Certora = gpt.parse_gpt(completion)
+        if certora.check_complete(certora_log_name):
+            break
 
-    certora.outputToUser(gptString_certora, userOutputString)
-    # requestString = ' '.join(slither.parse_outputSlither(slither_output))
+        gpt_completion_certora = gpt.openAIAnalysisCertora(file_path_solidity, spec_path, certora_log_name, i)
 
+        userOutputString =  certora.parse_certora(certora_log_name)
 
+        gptString_certora = gpt.parse_gpt(gpt_completion_certora, file_path_solidity)
 
+        certora.outputToUser(gptString_certora, userOutputString, i)
     
+    print("YOUR FINAL SOL FILE CAN BE VIEWED AT ", file_path_solidity)
+    
+if __name__ == "__main__":
+    main()

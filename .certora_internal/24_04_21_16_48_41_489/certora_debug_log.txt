@@ -1,0 +1,43 @@
+Saving last configuration file to .certora_internal/24_04_21_16_48_41_489/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_48_41_489/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec, found the imports: []
+copying spec file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec to /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_48_41_489/.certora_sources/.0_Borda.spec.spec
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_48_41_489/.certora_verify.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_16_48_41_489']
+
+building file BordaBug1.sol
+Running cmd solc -o ".certora_internal/24_04_21_16_48_41_489/.certora_config/BordaBug1.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json
+stdout, stderr = .certora_internal/24_04_21_16_48_41_489/.certora_config/BordaBug1.sol_0.standard.json.stdout, .certora_internal/24_04_21_16_48_41_489/.certora_config/BordaBug1.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_21_16_48_41_489/.certora_config/BordaBug1.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json time: 0.2608
+reading standard json data from .certora_internal/24_04_21_16_48_41_489/.certora_config/BordaBug1.sol_0.standard.json.stdout
+Running cmd solc --version
+stdout, stderr = .certora_internal/24_04_21_16_48_41_489/.certora_config/version_check_solc.stdout, .certora_internal/24_04_21_16_48_41_489/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run solc --version time: 0.0982
+collecting worklist for /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol'])
+Adding a base contract link ref /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol to worklist
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol'])
+Contracts in BordaBug1.sol_0 (file BordaBug1.sol): ['Borda', 'SafeMath']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:Borda'), (274184521717934524641157099916833587201, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:SafeMath'), (274184521717934524641157099916833587202, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol:IBorda')]
+Working on contract Borda
+Working on contract Borda
+Working on contract SafeMath
+Working on contract SafeMath
+Working on contract IBorda
+Working on contract IBorda
+For contracts of primary BordaBug1
+finding primary contract address of /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:BordaBug1 in [(274184521717934524641157099916833587200, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:Borda'), (274184521717934524641157099916833587201, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:SafeMath'), (274184521717934524641157099916833587202, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol:IBorda')]
+build failed
+Failure traceback: 
+CertoraUserInputError: Failed to find a contract named BordaBug1 in file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol. Please make sure there is a file named like the contract, or a file containing a contract with this name. Available contracts: /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:Borda,/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:SafeMath,/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol:IBorda
+Encountered an error running Certora Prover:
+Failed to find a contract named BordaBug1 in file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol. Please make sure there is a file named like the contract, or a file containing a contract with this name. Available contracts: /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:Borda,/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/BordaBug1.sol:SafeMath,/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol:IBorda

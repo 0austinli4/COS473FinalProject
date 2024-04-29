@@ -1,0 +1,37 @@
+Saving last configuration file to .certora_internal/24_04_29_16_48_56_089/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_29_16_48_56_089/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec, found the imports: []
+copying spec file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec to /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_29_16_48_56_089/.certora_sources/.0_Borda.spec.spec
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_29_16_48_56_089/.certora_verify.json
+Path to typechecker is /opt/homebrew/lib/python3.11/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/opt/homebrew/lib/python3.11/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_29_16_48_56_089']
+
+building file Borda.sol
+Running cmd solc -o ".certora_internal/24_04_29_16_48_56_089/.certora_config/Borda.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json
+stdout, stderr = .certora_internal/24_04_29_16_48_56_089/.certora_config/Borda.sol_0.standard.json.stdout, .certora_internal/24_04_29_16_48_56_089/.certora_config/Borda.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_29_16_48_56_089/.certora_config/Borda.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json time: 0.1383
+reading standard json data from .certora_internal/24_04_29_16_48_56_089/.certora_config/Borda.sol_0.standard.json.stdout
+build failed
+Failure traceback: 
+CertoraUserInputError: solc had an error:
+ParserError: Expected ';' but got '('
+   --> /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol:112:35:
+    |
+112 | rule registeredCannotChangeOnceSet(method f, address voter) {
+    |                                   ^
+
+
+Encountered an error running Certora Prover:
+solc had an error:
+ParserError: Expected ';' but got '('
+   --> /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol:112:35:
+    |
+112 | rule registeredCannotChangeOnceSet(method f, address voter) {
+    |                                   ^
+
+

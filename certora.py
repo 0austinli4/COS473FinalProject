@@ -8,17 +8,17 @@ import gpt as gpt
 
 
 # Initialize parser
-parser = argparse.ArgumentParser(description='Run Certora verification.')
-parser.add_argument('file_path', help='Path to the smart contract file')
-parser.add_argument('spec_path', help='Path to the specification file')
-parser.add_argument('certora_path', help='Path to the certora file')
+# parser = argparse.ArgumentParser(description='Run Certora verification.')
+# parser.add_argument('file_path', help='Path to the smart contract file')
+# parser.add_argument('spec_path', help='Path to the specification file')
+# parser.add_argument('certora_path', help='Path to the certora file')
 
 
 # Parse the arguments
-args = parser.parse_args()
+# args = parser.parse_args()
 import subprocess
 
-def run_certora(file_path, spec_path):
+def run_certora(file_path, spec_path, index):
     # Construct the command to run Certora
     fileName = file_path.split(".sol")[0]
     command = f'certoraRun {file_path} --verify {fileName}:{spec_path} --wait_for_results'
@@ -27,20 +27,24 @@ def run_certora(file_path, spec_path):
     result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
     # Write both stdout and stderr to the certoralog.txt file
-    file_path = "certora_log.txt"
-    with open(file_path, 'a') as log_file:
+    file_path = "certora_log_" + str(index)
+    
+    with open(file_path, 'w') as log_file:
         if result.stdout:
             log_file.write("Standard Output:\n" + result.stdout + "\n")
-        if result.stderr:
+        elif result.stderr:
             log_file.write("Standard Error:\n" + result.stderr)
+        else:
+            print("File path error")
 
     # Return appropriate content based on the success or error
-    if result.returncode != 0:
-        return result.stderr
-    else:
-        return result.stdout
+    return file_path
 
-def parse_certora(certora_output):
+def parse_certora(file_path):
+
+    with open(file_path, 'r') as file:
+        certora_output = file.read()
+
     # Find the starting point of the summary
     start_index = certora_output.find("Failures summary:")
     if start_index == -1:
@@ -57,30 +61,60 @@ def parse_certora(certora_output):
 
     return summary_part
 
-def outputToUser(gptString, certora_output, filename="output_log.txt"):
+def outputToUser(gptString, certora_output, index, filename="explainability_output.txt"):
     with open(filename, "a") as file:
         file.write("======================================================================\n")
-        file.write("\n\n\n\n 1. Certora (to see full logs, look for certora_errors.log) : \n")
+        file.write("RUN #" + str(index))
+        file.write("\n")
+        file.write("Certora (to see full logs, look for certora_errors.log) : \n")
         file.write(certora_output + "\n")
-        file.write("\n\n\n\n 1. ChatGPT Revisions(to see newly written file, look at gpt1.sol): \n")
+        file.write("\n\n\n\n ChatGPT Revisions(to see newly written file, look at gpt1.sol): \n")
         file.write(gptString + "\n")
         file.write("\n")
         file.write("======================================================================\n")
 
+def clean_certoraLog(file_path):
+    keyword = "Follow your job at"
+    processing_signals = ["processing |", "processing /", "processing -", "processing \\"]
+    # Open the original file to read content
+    with open(file_path, 'r') as file:
+        content = file.readlines()
+
+    # Initialize a variable to store the filtered content
+    new_content = []
+    processing_started = False
+    for line in content:
+        if keyword in line:
+            processing_started = True
+        if processing_started:
+            # Check if the line starts with any of the processing signals
+            if not any(signal in line for signal in processing_signals):
+                new_content.append(line)
+
+    # Write the filtered content back to the file
+    with open(file_path, 'w') as file:
+        file.writelines(new_content)
+
+def check_complete(file_path):
+    with open(file_path, 'r') as file:
+        input = file.read()
+    if "Failures summary:" in input:
+        return False  
+    else:
+        return True  # Return True if "Error:" is not found
 # Main function to execute the script
-def main():
-    parser = argparse.ArgumentParser(description='Run Certora verification.')
-    parser.add_argument('file_path', help='Path to the smart contract file')
-    parser.add_argument('spec_path', help='Path to the specification file')
-    parser.add_argument('certora_path', help='Path to the certora file')
+# def main():
+#     parser = argparse.ArgumentParser(description='Run Certora verification.')
+#     parser.add_argument('file_path', help='Path to the smart contract file')
+#     parser.add_argument('spec_path', help='Path to the specification file')
+#     #parser.add_argument('certora_path', help='Path to the certora file')
 
-    args = parser.parse_args()
+#     args = parser.parse_args()
 
-    # output = run_certora(args.file_path, args.spec_path)
-    # output = gpt.openAIAnalysisCertora(args.file_path, args.spec_path, args.certora_path)
-    # print("FINAL OUTPUT", output)
-    # gpt.parse_gpt(args.certora_path)
-    parse_certora(args.certora_path)
+#     # output = run_certora(args.file_path, args.spec_path)
+#     # output = gpt.openAIAnalysisCertora(args.file_path, args.spec_path, args.certora_path)
+#     # gpt.parse_gpt(args.certora_path)
+#     #parse_certora(args.certora_path)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()

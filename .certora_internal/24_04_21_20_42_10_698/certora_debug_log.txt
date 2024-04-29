@@ -1,0 +1,73 @@
+Saving last configuration file to .certora_internal/24_04_21_20_42_10_698/run.conf
+You are using certora-cli version 7.0.7; however, version 7.3.0 is available. It is recommended to upgrade by running: pip install certora-cli --upgrade
+or
+pip3 install certora-cli --upgrade
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_config
+In /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec, found the imports: []
+copying spec file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec to /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/.0_Borda.spec.spec
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_verify.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698']
+
+building file Borda.sol
+Running cmd solc -o ".certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json
+stdout, stderr = .certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0.standard.json.stdout, .certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject",. --standard-json time: 0.2133
+reading standard json data from .certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0.standard.json.stdout
+Running cmd solc --version
+stdout, stderr = .certora_internal/24_04_21_20_42_10_698/.certora_config/version_check_solc.stdout, .certora_internal/24_04_21_20_42_10_698/.certora_config/version_check_solc.stderr
+Exitcode 0
+Solc run solc --version time: 0.0628
+collecting worklist for /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol'])
+Adding a base contract link ref /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol to worklist
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol'])
+Contracts in Borda.sol_0 (file Borda.sol): ['Borda', 'SafeMath']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol:Borda'), (274184521717934524641157099916833587201, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol:SafeMath'), (274184521717934524641157099916833587202, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol:IBorda')]
+Working on contract Borda
+Working on contract Borda
+Working on contract SafeMath
+Working on contract SafeMath
+Working on contract IBorda
+Working on contract IBorda
+For contracts of primary Borda
+finding primary contract address of /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol:Borda in [(274184521717934524641157099916833587200, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol:Borda'), (274184521717934524641157099916833587201, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol:SafeMath'), (274184521717934524641157099916833587202, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol:IBorda')]
+Contracts in SDC Borda.sol_0: ['Borda', 'SafeMath', 'IBorda']
+Building source tree
+Copying /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/IBorda.sol to .certora_internal/24_04_21_20_42_10_698/.certora_sources/IBorda.sol
+Copying /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.spec to .certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.spec
+Copying /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/Borda.sol to .certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol
+Backing up current .certora_sources to .certora_internal/24_04_21_20_42_10_698/.certora_sources/.pre_autofinders.0
+Running cmd solc -o ".certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources",. --standard-json
+stdout, stderr = .certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0.standard.json.stdout, .certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc -o ".certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0/" --overwrite --allow-paths "/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources",. --standard-json time: 0.1188
+reading standard json data from .certora_internal/24_04_21_20_42_10_698/.certora_config/Borda.sol_0.standard.json.stdout
+collecting worklist for /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/IBorda.sol'])
+Adding a base contract link ref /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/IBorda.sol to worklist
+Processing dependencies from file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/IBorda.sol
+available keys: dict_keys(['/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/IBorda.sol'])
+Contracts in Borda.sol_0 (file .certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol): ['Borda', 'SafeMath']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587203, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol:Borda'), (274184521717934524641157099916833587204, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol:SafeMath'), (274184521717934524641157099916833587205, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/IBorda.sol:IBorda')]
+Working on contract Borda
+Working on contract Borda
+Working on contract SafeMath
+Working on contract SafeMath
+Working on contract IBorda
+Working on contract IBorda
+For contracts of primary Borda
+finding primary contract address of /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol:Borda in [(274184521717934524641157099916833587203, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol:Borda'), (274184521717934524641157099916833587204, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/Borda.sol:SafeMath'), (274184521717934524641157099916833587205, '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_sources/IBorda.sol:IBorda')]
+Contracts in SDC Borda.sol_0: ['Borda', 'SafeMath', 'IBorda']
+Backing up instrumented .certora_sources to .certora_internal/24_04_21_20_42_10_698/.certora_sources/.post_autofinders.0
+Rolling back .certora_sources to .certora_internal/24_04_21_20_42_10_698/.certora_sources/.pre_autofinders.0 version
+Libraries to add = []
+writing /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_verify.json
+writing file /Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698/.certora_build.json
+Path to typechecker is /Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/Users/austinli/.pyenv/versions/3.8.17/lib/python3.8/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/Users/austinli/College/COS-ECE-473-Course-24/COS473FinalProject/.certora_internal/24_04_21_20_42_10_698', '-typeCheck']

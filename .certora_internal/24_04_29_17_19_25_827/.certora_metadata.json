@@ -1,0 +1,24 @@
+{
+    "CLI_version": "7.0.7",
+    "branch": "main",
+    "conf": {
+        "files": [
+            "Borda.sol"
+        ],
+        "process": "emv",
+        "verify": "Borda:Borda.spec",
+        "wait_for_results": "all"
+    },
+    "cwd_relative": ".",
+    "dirty": true,
+    "origin": "https://github.com/0austinli4/COS473FinalProject.git",
+    "raw_args": [
+        "/opt/homebrew/bin/certoraRun",
+        "Borda.sol",
+        "--verify",
+        "Borda:Borda.spec",
+        "--wait_for_results"
+    ],
+    "revision": "c5253581c425e14c1ee3822530e04bfbc79ca9c5",
+    "timestamp": "1714439965.979756"
+}

@@ -1,0 +1,255 @@
+Follow your job at https://prover.certora.com
+Once the job is completed, the results will be available at https://prover.certora.com/output/691312/d7c1ed547af54cec9727d35ec08813f6?anonymousKey=e6a98e9ca382c12884144bc0a21a6bd7340b7d56
+Output:
+
+[INFO]: Download - 7.0.7/emv-7.0.7.jar
+[INFO]: Download finished
+[INFO]: Download - 7.0.7/tac_optimizer-7.0.7
+[INFO]: Download finished
+[INFO]: Download - uploadFiles/691312/d7c1ed547af54cec9727d35ec08813f6.zip
+[INFO]: Download finished
+[INFO]: Primary contract name: Borda
+[INFO]: found 75 cache files
+[INFO]: Command: java -Xmx31500m -XX:+UseParallelGC -XX:MaxHeapFreeRatio=10 -XX:MinHeapFreeRatio=5 -XX:G1PeriodicGCInterval=15 -XX:NewRatio=5 -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/home/appuser/code/java_error%p.log -DoutputUrl=outputs/691312/output_d7c1ed547af54cec9727d35ec08813f6/ -DjobId=d7c1ed547af54cec9727d35ec08813f6 -DuserId=691312 -jar /home/appuser/prover/emv.jar -cache dd0934b5dd205e3b3fddeb2e2a17e92b254fad81dc102caf0cb9b3e5b88f35bd-optimisticFalse-iterNone-None--certora-cli-7.0.7 -globalTimeout 7200 -globalTimeout 7200
+[INFO]: Overcommit Memory Value: 1 
+Start Mon Apr 29 21:27:44 GMT 2024
+Start Mon Apr 29 21:27:44 GMT 2024
+The scene contains 20 contracts:
+Borda : 0xce4604a0000000000000000000000003,
+ecrecover : 0x1,
+sha256 : 0x2,
+ripemd160 : 0x3,
+identity : 0x4,
+bigmod : 0x5,
+bn256Add : 0x6,
+bn256ScalarMul : 0x7,
+bn256Pairing : 0x8,
+Precompiled244 : 0xf4,
+Precompiled245 : 0xf5,
+Precompiled246 : 0xf6,
+Precompiled247 : 0xf7,
+Precompiled248 : 0xf8,
+Precompiled249 : 0xf9,
+Precompiled250 : 0xfa,
+Precompiled251 : 0xfb,
+Precompiled252 : 0xfc,
+Precompiled253 : 0xfd,
+Precompiled254 : 0xfe
+Running initial transformations
+Has CVL checks.
+Checking CVL Borda.spec for contract Borda
+Unrolling loops 1 time, unwinding condition is asserted
+Checking rule contendersPointsNonDecreasing (4 out of 4)...
+Checking rule onceBlackListedNotOut (3 out of 4)...
+Checking rule correctPointsIncreaseToContenders (2 out of 4)...
+Checking rule registeredCannotChangeOnceSet (1 out of 4)...
+Starting to run on rule contendersPointsNonDecreasing 
+Starting to run on rule correctPointsIncreaseToContenders 
+Starting to run on rule registeredCannotChangeOnceSet 
+Starting to run on rule onceBlackListedNotOut 
+Starting to run on rule getWinner() of contendersPointsNonDecreasing
+Starting to run on rule getWinner() of onceBlackListedNotOut
+Starting to run on rule getWinner() of registeredCannotChangeOnceSet
+Starting to run on rule registerContender(uint8) of contendersPointsNonDecreasing
+Starting to run on rule registerContender(uint8) of onceBlackListedNotOut
+Starting to run on rule registerContender(uint8) of registeredCannotChangeOnceSet
+Starting to run on rule correctPointsIncreaseToContenders 
+Starting to run on rule registerVoter(uint8) of contendersPointsNonDecreasing
+Starting to run on rule registerVoter(uint8) of onceBlackListedNotOut
+Starting to run on rule registerVoter(uint8) of registeredCannotChangeOnceSet
+Starting to run on rule hasVoted(address) of contendersPointsNonDecreasing
+Starting to run on rule hasVoted(address) of onceBlackListedNotOut
+Starting to run on rule hasVoted(address) of registeredCannotChangeOnceSet
+Starting to run on rule getPointsOfContender(address) of contendersPointsNonDecreasing
+Starting to run on rule getPointsOfContender(address) of onceBlackListedNotOut
+Starting to run on rule getPointsOfContender(address) of registeredCannotChangeOnceSet
+Starting to run on rule getFullContenderDetails(address) of contendersPointsNonDecreasing
+Starting to run on rule getFullContenderDetails(address) of onceBlackListedNotOut
+Starting to run on rule getFullVoterDetails(address) of contendersPointsNonDecreasing
+Starting to run on rule getFullContenderDetails(address) of registeredCannotChangeOnceSet
+Starting to run on rule getFullVoterDetails(address) of onceBlackListedNotOut
+Starting to run on rule getFullVoterDetails(address) of registeredCannotChangeOnceSet
+Starting to run on rule vote(address,address,address) of contendersPointsNonDecreasing
+Starting to run on rule vote(address,address,address) of onceBlackListedNotOut
+Starting to run on rule vote(address,address,address) of registeredCannotChangeOnceSet
+Starting to run on rule registerContender(uint8) of contendersPointsNonDecreasing
+Starting to run on rule getFullContenderDetails(address) of contendersPointsNonDecreasing
+Starting to run on rule hasVoted(address) of contendersPointsNonDecreasing
+Starting to run on rule getPointsOfContender(address) of contendersPointsNonDecreasing
+Starting to run on rule registerVoter(uint8) of contendersPointsNonDecreasing
+Starting to run on rule getWinner() of contendersPointsNonDecreasing
+Starting to run on rule getFullVoterDetails(address) of contendersPointsNonDecreasing
+Starting to run on rule registerContender(uint8) of onceBlackListedNotOut
+Starting to run on rule vote(address,address,address) of contendersPointsNonDecreasing
+Starting to run on rule hasVoted(address) of onceBlackListedNotOut
+Starting to run on rule getPointsOfContender(address) of onceBlackListedNotOut
+Starting to run on rule getFullContenderDetails(address) of onceBlackListedNotOut
+Starting to run on rule registerVoter(uint8) of onceBlackListedNotOut
+Starting to run on rule getWinner() of onceBlackListedNotOut
+Starting to run on rule getFullVoterDetails(address) of onceBlackListedNotOut
+Starting to run on rule registerContender(uint8) of registeredCannotChangeOnceSet
+Starting to run on rule getFullContenderDetails(address) of registeredCannotChangeOnceSet
+Starting to run on rule getFullVoterDetails(address) of registeredCannotChangeOnceSet
+Starting to run on rule registerVoter(uint8) of registeredCannotChangeOnceSet
+Starting to run on rule getPointsOfContender(address) of registeredCannotChangeOnceSet
+Starting to run on rule hasVoted(address) of registeredCannotChangeOnceSet
+Starting to run on rule vote(address,address,address) of onceBlackListedNotOut
+Starting to run on rule getWinner() of registeredCannotChangeOnceSet
+Starting to run on rule vote(address,address,address) of registeredCannotChangeOnceSet
+Total time for onceBlackListedNotOut-registerContender(uint8): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contendersPointsNonDecreasing-registerContender(uint8): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contendersPointsNonDecreasing-registerVoter(uint8): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for onceBlackListedNotOut-getPointsOfContender(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contendersPointsNonDecreasing-getPointsOfContender(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for registeredCannotChangeOnceSet-getFullVoterDetails(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for registeredCannotChangeOnceSet-registerContender(uint8): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for registeredCannotChangeOnceSet-getPointsOfContender(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contendersPointsNonDecreasing-hasVoted(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for onceBlackListedNotOut-getFullVoterDetails(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: contendersPointsNonDecreasing-registerContender(uint8)
+Verified: contendersPointsNonDecreasing-hasVoted(address)
+contendersPointsNonDecreasing-registerContender(uint8): Properties successfully verified on all inputs
+contendersPointsNonDecreasing-hasVoted(address): Properties successfully verified on all inputs
+Verified: registeredCannotChangeOnceSet-getPointsOfContender(address)
+Verified: onceBlackListedNotOut-getPointsOfContender(address)
+Verified: registeredCannotChangeOnceSet-getFullVoterDetails(address)
+onceBlackListedNotOut-getPointsOfContender(address): Properties successfully verified on all inputs
+registeredCannotChangeOnceSet-getPointsOfContender(address): Properties successfully verified on all inputs
+registeredCannotChangeOnceSet-getFullVoterDetails(address): Properties successfully verified on all inputs
+Verified: contendersPointsNonDecreasing-registerVoter(uint8)
+Verified: contendersPointsNonDecreasing-getPointsOfContender(address)
+contendersPointsNonDecreasing-getPointsOfContender(address): Properties successfully verified on all inputs
+Verified: registeredCannotChangeOnceSet-registerContender(uint8)
+registeredCannotChangeOnceSet-registerContender(uint8): Properties successfully verified on all inputs
+contendersPointsNonDecreasing-registerVoter(uint8): Properties successfully verified on all inputs
+Total time for onceBlackListedNotOut-hasVoted(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for registeredCannotChangeOnceSet-getWinner(): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onceBlackListedNotOut-getFullVoterDetails(address)
+onceBlackListedNotOut-getFullVoterDetails(address): Properties successfully verified on all inputs
+Verified: onceBlackListedNotOut-registerContender(uint8)
+onceBlackListedNotOut-registerContender(uint8): Properties successfully verified on all inputs
+Total time for onceBlackListedNotOut-getWinner(): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onceBlackListedNotOut-hasVoted(address)
+onceBlackListedNotOut-hasVoted(address): Properties successfully verified on all inputs
+Verified: registeredCannotChangeOnceSet-getWinner()
+registeredCannotChangeOnceSet-getWinner(): Properties successfully verified on all inputs
+Verified: onceBlackListedNotOut-getWinner()
+onceBlackListedNotOut-getWinner(): Properties successfully verified on all inputs
+Total time for correctPointsIncreaseToContenders: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: correctPointsIncreaseToContenders
+correctPointsIncreaseToContenders: Properties successfully verified on all inputs
+Total time for onceBlackListedNotOut-getFullContenderDetails(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for registeredCannotChangeOnceSet-getFullContenderDetails(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for registeredCannotChangeOnceSet-registerVoter(uint8): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for onceBlackListedNotOut-registerVoter(uint8): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contendersPointsNonDecreasing-getFullContenderDetails(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: registeredCannotChangeOnceSet-registerVoter(uint8)
+registeredCannotChangeOnceSet-registerVoter(uint8): Properties successfully verified on all inputs
+Verified: onceBlackListedNotOut-registerVoter(uint8)
+onceBlackListedNotOut-registerVoter(uint8): Properties successfully verified on all inputs
+Verified: registeredCannotChangeOnceSet-getFullContenderDetails(address)
+registeredCannotChangeOnceSet-getFullContenderDetails(address): Properties successfully verified on all inputs
+Verified: onceBlackListedNotOut-getFullContenderDetails(address)
+Verified: contendersPointsNonDecreasing-getFullContenderDetails(address)
+onceBlackListedNotOut-getFullContenderDetails(address): Properties successfully verified on all inputs
+contendersPointsNonDecreasing-getFullContenderDetails(address): Properties successfully verified on all inputs
+Total time for contendersPointsNonDecreasing-getFullVoterDetails(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: contendersPointsNonDecreasing-getFullVoterDetails(address)
+contendersPointsNonDecreasing-getFullVoterDetails(address): Properties successfully verified on all inputs
+Total time for registeredCannotChangeOnceSet-hasVoted(address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contendersPointsNonDecreasing-getWinner(): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Result for correctPointsIncreaseToContenders: correctPointsIncreaseToContenders: SUCCESS
+Verified: contendersPointsNonDecreasing-getWinner()
+contendersPointsNonDecreasing-getWinner(): Properties successfully verified on all inputs
+Verified: registeredCannotChangeOnceSet-hasVoted(address)
+registeredCannotChangeOnceSet-hasVoted(address): Properties successfully verified on all inputs
+Total time for contendersPointsNonDecreasing-vote(address,address,address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: contendersPointsNonDecreasing-vote(address,address,address)
+contendersPointsNonDecreasing-vote(address,address,address): Properties successfully verified on all inputs
+Result for contendersPointsNonDecreasing: contendersPointsNonDecreasing: registerVoter(uint8): SUCCESS
+getFullVoterDetails(address): SUCCESS
+registerContender(uint8): SUCCESS
+getWinner(): SUCCESS
+getPointsOfContender(address): SUCCESS
+getFullContenderDetails(address): SUCCESS
+hasVoted(address): SUCCESS
+vote(address,address,address): SUCCESS
+Total time for onceBlackListedNotOut-vote(address,address,address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for registeredCannotChangeOnceSet-vote(address,address,address): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onceBlackListedNotOut-vote(address,address,address)
+onceBlackListedNotOut-vote(address,address,address): Properties successfully verified on all inputs
+Verified: registeredCannotChangeOnceSet-vote(address,address,address)
+registeredCannotChangeOnceSet-vote(address,address,address): Properties successfully verified on all inputs
+Result for onceBlackListedNotOut: onceBlackListedNotOut: getFullVoterDetails(address): SUCCESS
+registerContender(uint8): SUCCESS
+getWinner(): SUCCESS
+getFullContenderDetails(address): SUCCESS
+getPointsOfContender(address): SUCCESS
+vote(address,address,address): SUCCESS
+hasVoted(address): SUCCESS
+registerVoter(uint8): SUCCESS
+Result for registeredCannotChangeOnceSet: registeredCannotChangeOnceSet: getFullVoterDetails(address): SUCCESS
+getFullContenderDetails(address): SUCCESS
+getPointsOfContender(address): SUCCESS
+getWinner(): SUCCESS
+hasVoted(address): SUCCESS
+vote(address,address,address): SUCCESS
+registerContender(uint8): SUCCESS
+registerVoter(uint8): SUCCESS
+Results for contendersPointsNonDecreasing:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|registerVoter(uint8)                    |Not violated |2         |                                                            |no local variables                                |
+|getFullVoterDetails(address)            |Not violated |0         |                                                            |no local variables                                |
+|registerContender(uint8)                |Not violated |2         |                                                            |no local variables                                |
+|getWinner()                             |Not violated |0         |                                                            |no local variables                                |
+|getPointsOfContender(address)           |Not violated |3         |                                                            |no local variables                                |
+|getFullContenderDetails(address)        |Not violated |0         |                                                            |no local variables                                |
+|hasVoted(address)                       |Not violated |1         |                                                            |no local variables                                |
+|vote(address,address,address)           |Not violated |0         |                                                            |no local variables                                |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for onceBlackListedNotOut:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|getFullVoterDetails(address)            |Not violated |1         |                                                            |no local variables                                |
+|registerContender(uint8)                |Not violated |2         |                                                            |no local variables                                |
+|getWinner()                             |Not violated |1         |                                                            |no local variables                                |
+|getFullContenderDetails(address)        |Not violated |0         |                                                            |no local variables                                |
+|getPointsOfContender(address)           |Not violated |2         |                                                            |no local variables                                |
+|vote(address,address,address)           |Not violated |1         |                                                            |no local variables                                |
+|hasVoted(address)                       |Not violated |1         |                                                            |no local variables                                |
+|registerVoter(uint8)                    |Not violated |1         |                                                            |no local variables                                |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for registeredCannotChangeOnceSet:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|getFullVoterDetails(address)            |Not violated |1         |                                                            |no local variables                                |
+|getFullContenderDetails(address)        |Not violated |1         |                                                            |no local variables                                |
+|getPointsOfContender(address)           |Not violated |1         |                                                            |no local variables                                |
+|getWinner()                             |Not violated |1         |                                                            |no local variables                                |
+|hasVoted(address)                       |Not violated |0         |                                                            |no local variables                                |
+|vote(address,address,address)           |Not violated |1         |                                                            |no local variables                                |
+|registerContender(uint8)                |Not violated |1         |                                                            |no local variables                                |
+|registerVoter(uint8)                    |Not violated |1         |                                                            |no local variables                                |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for all:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|correctPointsIncreaseToContenders       |Not violated |3         |                                                            |no local variables                                |
+|contendersPointsNonDecreasing           |Not violated |3         |                                                            |no local variables                                |
+|onceBlackListedNotOut                   |Not violated |3         |                                                            |no local variables                                |
+|registeredCannotChangeOnceSet           |Not violated |1         |                                                            |no local variables                                |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Done 0m
+Done 0m
+Event reporter: all events were sent without errors
+[INFO]: updated 'dd0934b5dd205e3b3fddeb2e2a17e92b254fad81dc102caf0cb9b3e5b88f35bd-optimisticFalse-iterNone-None--certora-cli-7.0.7' cache
+
+Job is completed! View the results at https://prover.certora.com/output/691312/d7c1ed547af54cec9727d35ec08813f6?anonymousKey=e6a98e9ca382c12884144bc0a21a6bd7340b7d56
+Finished verification request
+[32mNo errors found by Prover![0m
+
